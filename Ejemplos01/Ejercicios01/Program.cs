@@ -1,7 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine(String.Join(",", CreateArray("hola", 3)));
+﻿Console.WriteLine(String.Join(",", CreateArray("hola", 3)));
 Console.WriteLine(String.Join(",", CreateArray("hola")));
 Console.WriteLine(String.Join(",", CreateArray()));
+
+string hola = "hola";
+
+
 
 Console.WriteLine(Suma(new int[] { 2, 3, 4 }));
 
@@ -10,6 +13,10 @@ Console.WriteLine($"Menor {menor} Mayor {mayor}");
 
 Console.WriteLine(String.Join(",", CreateNumbers(6)));
 
+Console.WriteLine(hasOrder(new int[] { 2, 3, 4 }));
+Console.WriteLine(hasOrder(new int[] { 2, 3, 4 }, Orden.Descendente));
+
+Console.WriteLine(String.Join(",", ReverseNumbers(new int[] { 2, 3, 4 })));
 
 string[] CreateArray(string cadena = "", int tam = 1)
 {
@@ -54,3 +61,35 @@ int[] CreateNumbers(int tam)
     }
     return temp;
 }
+bool hasOrder(int[] numeros, Orden orden = Orden.Ascendente)
+{
+    for (int i = 1; i < numeros.Length; i++)
+    {
+        if (orden == Orden.Ascendente)
+        {
+            if (numeros[i] < numeros[i - 1])
+            {
+                return false;
+            }
+        }
+        else
+        {
+            if (numeros[i] > numeros[i - 1])
+            {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+int[] ReverseNumbers(int[] numeros)
+{
+    int[] temp = new int[numeros.Length];
+    for (int i = 0; i < numeros.Length; i++)
+    {
+        temp[numeros.Length - i - 1] = numeros[i];
+
+    }
+    return temp;
+}
+enum Orden : int { Ascendente = 0, Descendente = 1 };
