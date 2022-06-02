@@ -26,7 +26,7 @@ int older = edad ?? 18 + 10;
 Console.WriteLine(edad);
 Console.WriteLine(older);
 
-if (edad is null)
+if (edad != null)
 {
     edad = 18;
 }
@@ -134,7 +134,7 @@ else // (uri == null)
 
 // ?. ?[]
 
-static string Combine(params string[] paths)
+ string Combine(params string[] paths)
 {
     string result = string.Empty;
     foreach (string path in paths)
