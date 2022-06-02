@@ -1,5 +1,7 @@
 ﻿// Verbatim @
 
+using Ejemplos01;
+
 string s1 = "He said, \"This is the last \u0063hance\x0021\"";
 string s2 = @"He said, ""This is the last \u0063hance\x0021""";
 string s3 = @"Hola
@@ -85,6 +87,8 @@ Console.WriteLine($"Tuple with elements {t1.Item1} and {t1.Item2}.");
 Console.WriteLine($"Sum of {t2.Count} elements is {t2.Sum}.");
 // Output:
 // Sum of 3 elements is 4.5.
+
+Class1.foo();
 
 //Arrays
 int[] array = new int[5];
