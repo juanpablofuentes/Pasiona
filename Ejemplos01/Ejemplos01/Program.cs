@@ -1,5 +1,7 @@
 ﻿// Verbatim @
 
+using Ejemplos01;
+
 string s1 = "He said, \"This is the last \u0063hance\x0021\"";
 string s2 = @"He said, ""This is the last \u0063hance\x0021""";
 string s3 = @"Hola
@@ -26,7 +28,7 @@ int older = edad ?? 18 + 10;
 Console.WriteLine(edad);
 Console.WriteLine(older);
 
-if (edad is null)
+if (edad != null)
 {
     edad = 18;
 }
@@ -86,6 +88,8 @@ Console.WriteLine($"Sum of {t2.Count} elements is {t2.Sum}.");
 // Output:
 // Sum of 3 elements is 4.5.
 
+Class1.foo();
+
 //Arrays
 int[] array = new int[5];
 string[] stringArray = new string[6];
@@ -133,8 +137,6 @@ else // (uri == null)
 
 
 // ?. ?[]
-
-//https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/params
 
 static string Combine(params string[] paths)
 {
