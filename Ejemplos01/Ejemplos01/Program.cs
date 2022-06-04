@@ -134,6 +134,8 @@ else // (uri == null)
 
 // ?. ?[]
 
+//https://docs.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/params
+
 static string Combine(params string[] paths)
 {
     string result = string.Empty;
@@ -144,8 +146,8 @@ static string Combine(params string[] paths)
     return result;
 }
 
-//Overloading
-// Parámetros opcionales
+//Overloading https://www.programiz.com/csharp-programming/method-overloading
+// Parámetros opcionales  https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments
 
 string firstName;
 string ageText;
