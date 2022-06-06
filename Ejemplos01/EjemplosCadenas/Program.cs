@@ -99,3 +99,17 @@ string FromRainbow(string colorBand)
         _ => "#FFFFFF",
     };
 }
+
+string RockPaperScissors(string first, string second)
+{
+    return (first, second) switch
+    {
+        ("rock", "paper") => "Paper wins.",
+        ("rock", "scissors") => "Rock wins.",
+        ("paper", "rock") => "Paper wins.",
+        ("paper", "scissors") => "Scissors wins.",
+        ("scissors", "rock") => "Rock wins.",
+        ("scissors", "paper") => "Scissors wins.",
+        (_, _) => "Tie.",
+    };
+}

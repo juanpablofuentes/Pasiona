@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosCadenas", "Ejemplos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosArray", "EjemplosArray\EjemplosArray.csproj", "{ABF7E8A3-0192-4144-88BE-2F3A315B34AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosMetodos", "EjemplosMetodos\EjemplosMetodos.csproj", "{85258215-3AFD-4C30-825B-8E0CFA0EA9AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosEnumStruct", "EjemplosEnumStruct\EjemplosEnumStruct.csproj", "{5E25FF41-A441-4773-97B9-EDB291727504}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{ABF7E8A3-0192-4144-88BE-2F3A315B34AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABF7E8A3-0192-4144-88BE-2F3A315B34AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABF7E8A3-0192-4144-88BE-2F3A315B34AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85258215-3AFD-4C30-825B-8E0CFA0EA9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85258215-3AFD-4C30-825B-8E0CFA0EA9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85258215-3AFD-4C30-825B-8E0CFA0EA9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85258215-3AFD-4C30-825B-8E0CFA0EA9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E25FF41-A441-4773-97B9-EDB291727504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E25FF41-A441-4773-97B9-EDB291727504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E25FF41-A441-4773-97B9-EDB291727504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E25FF41-A441-4773-97B9-EDB291727504}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
