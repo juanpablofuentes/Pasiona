@@ -15,7 +15,7 @@ foreach(var c in variado)
 }
 
 Console.WriteLine(String.Join(",",cadenas));
-Array.Sort(cadenas);
+Array.Sort(cadenas,Longest);
 Console.WriteLine(String.Join(",", cadenas));
 Array.Reverse(cadenas);
 Console.WriteLine(String.Join(",", cadenas));
@@ -42,9 +42,11 @@ Console.WriteLine(myMatrix.Rank);
 
 printArray(myMatrix);
 printArray(otra);
-
+Console.WriteLine();
 printArrayPretty(myMatrix);
 printArrayPretty(otra);
+
+printArrayPretty(Diagonal(4));
 
 
 int[] numeros = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -55,6 +57,8 @@ foreach(int i in numeros[2..5])
 }
 
 Range rango = 2..5;
+
+
 
 foreach (int i in numeros[rango])
 {
@@ -84,4 +88,21 @@ void printArrayPretty(int[,] tabla)
         }
         Console.WriteLine();
     }
+}
+
+int Longest(string a, string b)
+{
+    if (a.Length > b.Length) return 1;
+    else if (a.Length < b.Length) return -1;
+    else return 0;
+}
+
+int[,] Diagonal(int tam)
+{
+    int[,] res = new int[tam, tam];
+    for(int i=0;i<tam; i++)
+    {
+        res[i, i] = 1;
+    }
+    return res;
 }

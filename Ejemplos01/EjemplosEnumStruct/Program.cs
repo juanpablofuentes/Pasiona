@@ -1,10 +1,17 @@
 ﻿TipoEmpleado tipo = TipoEmpleado.Comunicacion;
 
+
+
 Errores error = Errores.BadRequest;
 
 Console.WriteLine(tipo);
 Console.WriteLine(error);
 Console.WriteLine((int)error);
+
+if (tipo == TipoEmpleado.Administracion)
+{
+    Console.WriteLine("Eres de administración");
+}
 
 Point p = new Point(3, 4);
 
@@ -17,6 +24,8 @@ Point p2 = p;
 p2.Increment();
 p.Display();
 p2.Display();
+(int x, int y) = p2;
+Console.WriteLine(x + "," + y);
 enum TipoEmpleado
 {
     Administracion,
@@ -56,5 +65,10 @@ struct Point
     {
         Console.WriteLine("X = {0}, Y = {1}", X, Y);
     }
-    public (int XPos, int YPos) Deconstruct() => (X, Y);
+  
+    public void Deconstruct(out int x, out int y)
+    {
+        x = X; y = Y;
+       
+    }
 }

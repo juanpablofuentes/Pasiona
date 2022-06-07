@@ -36,6 +36,6 @@ namespace EjemplosClases
         {
             Console.WriteLine("X = {0}, Y = {1}", X, Y);
         }
-        public (int XPos, int YPos) Deconstruct() => (X, Y);
+        public void Deconstruct(out int XPos, out int YPos)=> (XPos, YPos) = (X, Y);
     }
 }

@@ -13,8 +13,10 @@ namespace EjemplosClases
 
         private string _surname;
 
+        public int Bono;
         public string Surname { get { return _surname; } set { _surname = value; } }
 
+         public int Sueldo { get ;  set ;  }
 
         // Accessor (get method).
         public string GetName() => _empName;

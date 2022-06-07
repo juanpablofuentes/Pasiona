@@ -1,6 +1,21 @@
 ﻿using EjemplosClases;
 
-Point p=new Point();
+ClaseDePrueba foo = new ClaseDePrueba();
+
+foo.prop1 = "hola";
+Console.WriteLine(foo.prop1);
+
+foo.setProp2("Adios");
+
+Console.WriteLine(foo.getProp2());
+
+foo.prop3 = "ejem";
+Console.WriteLine(foo.prop3);
+
+foo.Prop4 = "H";
+Console.WriteLine(foo.Prop4);
+
+Point p =new Point();
 
 Point p2 = p;
 
@@ -8,12 +23,25 @@ p2.Increment();
 
 p.Display();
 
+(int x, int y) = p;
+
 Console.WriteLine(CuentaAhorro.GetInterestRate());
 
 CuentaAhorro ca = new CuentaAhorro(1000);
 
 //Console.WriteLine(ca.GetInterestRate()); Error por acceder desde la instancia
 
+
+Empleado ana = new Empleado();
+
+ana.Sueldo = 500;
+
+ana.Surname = "Pi";
+ana.SetName("Ana");
+
+
+
+Console.WriteLine(ana.Sueldo);
 
 //CLases estáticas
 Math.Sqrt(2);
