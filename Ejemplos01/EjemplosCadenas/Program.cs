@@ -56,6 +56,8 @@ Console.WriteLine(ToTitleCase("hola    que   tal"));
 
 
 Console.WriteLine(CountVocals("hola    qué   tal"));
+Console.WriteLine(CountChar("hola    qué   tal"," "));
+Console.WriteLine(CountChar("hola tal   qué   tal","tal"));
 
 string[] Anagrama(string cadena)
 {
@@ -167,7 +169,7 @@ string ToTitleCase(string cadena)
 
 int CountVocals(string cadena)
 {
-    cadena = Normalizar(cadena);
+    cadena = Normalizar(cadena).ToLower();
     string vocales = "aeiou";
     int count = 0;
     for(int i=0; i< vocales.Length; i++)
@@ -180,7 +182,7 @@ int CountVocals(string cadena)
 int CountChar(string cadena, string c)
 {
     string cad = cadena.Replace(c, "");
-    return cadena.Length - cad.Length;
+    return (cadena.Length - cad.Length)/c.Length;
 }
 
 string Normalizar(string cadena)
