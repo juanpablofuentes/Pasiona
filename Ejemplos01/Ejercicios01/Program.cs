@@ -1,4 +1,29 @@
-﻿Console.WriteLine(String.Join(",", CreateArray("hola", 3)));
+﻿string nombre = "Juan pablo fuentes";
+
+object foo = new object();
+
+
+
+String Nombre, Apellido1, Apellido2;
+
+string[] partes =nombre.Split(" ");
+
+Nombre = partes[0];
+Apellido1 = partes.Length > 1 ? partes[1]:"";
+
+if (partes.Length > 1)
+{
+    Apellido1 = partes[1];
+}
+else
+{
+    Apellido1 = "";
+}
+Apellido2 = partes.Length > 2 ? String.Join(" ",partes[2..^0]):"";
+
+
+
+Console.WriteLine(String.Join(",", CreateArray("hola", 3)));
 Console.WriteLine(String.Join(",", CreateArray("hola")));
 Console.WriteLine(String.Join(",", CreateArray()));
 

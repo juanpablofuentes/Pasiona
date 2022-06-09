@@ -12,7 +12,10 @@ if (a==b)
 {
     Console.WriteLine("Iguales");
 }
+if (a == null)
+{
 
+}
 Console.WriteLine(a.absoluto);
 Console.WriteLine(b);
 

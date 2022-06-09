@@ -9,15 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejercicios01", "Ejercicios0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosCadenas", "EjemplosCadenas\EjemplosCadenas.csproj", "{AFFC1121-16A4-4143-A86E-83D268187C06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosArray", "EjemplosArray\EjemplosArray.csproj", "{ABF7E8A3-0192-4144-88BE-2F3A315B34AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosArray", "EjemplosArray\EjemplosArray.csproj", "{ABF7E8A3-0192-4144-88BE-2F3A315B34AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosMetodos", "EjemplosMetodos\EjemplosMetodos.csproj", "{85258215-3AFD-4C30-825B-8E0CFA0EA9AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosMetodos", "EjemplosMetodos\EjemplosMetodos.csproj", "{85258215-3AFD-4C30-825B-8E0CFA0EA9AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosEnumStruct", "EjemplosEnumStruct\EjemplosEnumStruct.csproj", "{5E25FF41-A441-4773-97B9-EDB291727504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosEnumStruct", "EjemplosEnumStruct\EjemplosEnumStruct.csproj", "{5E25FF41-A441-4773-97B9-EDB291727504}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosClases", "EjemplosClases\EjemplosClases.csproj", "{7CA896F4-86C2-4904-B58A-6410B0500FE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosClases", "EjemplosClases\EjemplosClases.csproj", "{7CA896F4-86C2-4904-B58A-6410B0500FE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosHerencia", "EjemplosHerencia\EjemplosHerencia.csproj", "{262E3152-6FED-4378-8E9B-CBAC26DA8C7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosHerencia", "EjemplosHerencia\EjemplosHerencia.csproj", "{262E3152-6FED-4378-8E9B-CBAC26DA8C7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pruebas", "Pruebas\Pruebas.csproj", "{205E5A0E-B646-4575-B5FE-130BF0A45E5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{262E3152-6FED-4378-8E9B-CBAC26DA8C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{262E3152-6FED-4378-8E9B-CBAC26DA8C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{262E3152-6FED-4378-8E9B-CBAC26DA8C7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{205E5A0E-B646-4575-B5FE-130BF0A45E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205E5A0E-B646-4575-B5FE-130BF0A45E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205E5A0E-B646-4575-B5FE-130BF0A45E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205E5A0E-B646-4575-B5FE-130BF0A45E5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
