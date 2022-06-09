@@ -1,5 +1,12 @@
 ﻿using EjemplosClases;
 
+Producto caja = new Producto("caja", 100);
+
+Console.WriteLine(caja.PVP);
+
+caja.Precio = 200;
+caja.PVP = 130;
+
 ClaseDePrueba foo = new ClaseDePrueba();
 
 foo.prop1 = "hola";
