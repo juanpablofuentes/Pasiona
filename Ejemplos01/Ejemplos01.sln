@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosEnumStruct", "Ejemp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosClases", "EjemplosClases\EjemplosClases.csproj", "{7CA896F4-86C2-4904-B58A-6410B0500FE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosHerencia", "EjemplosHerencia\EjemplosHerencia.csproj", "{262E3152-6FED-4378-8E9B-CBAC26DA8C7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{7CA896F4-86C2-4904-B58A-6410B0500FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CA896F4-86C2-4904-B58A-6410B0500FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CA896F4-86C2-4904-B58A-6410B0500FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{262E3152-6FED-4378-8E9B-CBAC26DA8C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{262E3152-6FED-4378-8E9B-CBAC26DA8C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{262E3152-6FED-4378-8E9B-CBAC26DA8C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{262E3152-6FED-4378-8E9B-CBAC26DA8C7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

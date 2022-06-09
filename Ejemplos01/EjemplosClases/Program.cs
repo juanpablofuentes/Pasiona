@@ -1,5 +1,26 @@
 ﻿using EjemplosClases;
 
+Complejo a = new Complejo(), b = new Complejo();
+
+a.real = 3;
+a.imaginaria = 4;
+
+b.real = 3;
+b.imaginaria = 4;
+
+if (a==b)
+{
+    Console.WriteLine("Iguales");
+}
+
+Console.WriteLine(a.absoluto);
+Console.WriteLine(b);
+
+if (a == 5)
+{
+    Console.WriteLine("Iguales");
+}
+
 Producto caja = new Producto("caja", 100);
 
 Console.WriteLine(caja.PVP);
@@ -93,3 +114,4 @@ When the private and protected keywords are combined on an
 item, the item is accessible within the defining class and by derived
 classes in the same assembly.
 */
+
