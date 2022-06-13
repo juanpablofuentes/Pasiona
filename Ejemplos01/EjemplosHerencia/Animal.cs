@@ -27,6 +27,7 @@ namespace EjemplosHerencia
         public string Pelaje { get; set; }
         public Mamifero(string nombre, string especie) : base(nombre, especie)
         {
+            Pelaje = "";
         }
      
     }

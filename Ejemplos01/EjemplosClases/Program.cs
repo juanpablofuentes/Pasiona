@@ -2,6 +2,8 @@
 
 Complejo a = new Complejo(), b = new Complejo();
 
+Complejo[] tabla = new Complejo[3];
+
 a.real = 3;
 a.imaginaria = 4;
 
