@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pruebas", "Pruebas\Pruebas.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPapelTijera_v01", "PiedraPapelTijera_v01\PiedraPapelTijera_v01.csproj", "{30E4A57B-54AC-44A6-9D87-A80732482A40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPapelTijerasLS_v02", "PiedraPapelTijerasLS_v02\PiedraPapelTijerasLS_v02.csproj", "{D2BBEB76-4611-4DA8-89D6-9B358B763FF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{30E4A57B-54AC-44A6-9D87-A80732482A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30E4A57B-54AC-44A6-9D87-A80732482A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30E4A57B-54AC-44A6-9D87-A80732482A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2BBEB76-4611-4DA8-89D6-9B358B763FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BBEB76-4611-4DA8-89D6-9B358B763FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BBEB76-4611-4DA8-89D6-9B358B763FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BBEB76-4611-4DA8-89D6-9B358B763FF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
