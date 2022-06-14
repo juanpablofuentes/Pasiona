@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace EjemplosHerencia
 {
-    internal interface IDraw
+    internal interface IRebaja
     {
-        public void Draw();
-        
-    }
-
-    interface IFullDraw : IDraw
-    {
-        public void FullDraw();
+        public decimal Rebaja();
     }
 }

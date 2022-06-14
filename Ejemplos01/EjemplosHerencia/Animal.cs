@@ -47,4 +47,8 @@ namespace EjemplosHerencia
             throw new NotImplementedException();
         }
     }
+    //class FoxTerrier : Perro
+    //{
+
+    //}
 }

@@ -1,4 +1,24 @@
-﻿using EjemplosClases;
+﻿
+using EjemplosClases;
+
+Producto[] cestaCompra = { new Producto("caja", 100), new Libro("libro", 20, "El quijote"), new Manzana("Golden", 5) };
+
+foreach(Producto prod in cestaCompra)
+{
+    Console.WriteLine(prod.etiqueta());
+    if (prod is Libro libro)
+    {
+        ((Libro)prod).Calidad();
+        Console.WriteLine(libro.Calidad());
+    }
+}
+
+IRebaja[] foo2 = { new Producto("caja", 100), new Complejo() };
+
+foreach (IRebaja reb in foo2)
+{
+    Console.WriteLine(reb.Rebaja());
+}
 
 Complejo a = new Complejo(), b = new Complejo();
 

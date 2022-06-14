@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjemplosClases
 {
-    internal class Complejo
+    internal class Complejo:IRebaja
     {
         public float real { get; set; }
         public float imaginaria { get; set; }
@@ -23,6 +23,10 @@ namespace EjemplosClases
 
         public static Complejo operator +(Complejo Left, Complejo Right) => Left;
         public override int GetHashCode()=>this.ToString().GetHashCode();
-        
+
+        public decimal Rebaja()
+        {
+            return (decimal)absoluto;
+        }
     }
 }
