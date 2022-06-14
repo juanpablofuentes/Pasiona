@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPapelTijera_v01", "Pi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPapelTijerasLS_v02", "PiedraPapelTijerasLS_v02\PiedraPapelTijerasLS_v02.csproj", "{D2BBEB76-4611-4DA8-89D6-9B358B763FF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPapelTijerasSOLID_03", "PiedraPapelTijerasSOLID_03\PiedraPapelTijerasSOLID_03.csproj", "{279448B8-94D0-4135-9814-C36CFA55540D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{D2BBEB76-4611-4DA8-89D6-9B358B763FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2BBEB76-4611-4DA8-89D6-9B358B763FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2BBEB76-4611-4DA8-89D6-9B358B763FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{279448B8-94D0-4135-9814-C36CFA55540D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{279448B8-94D0-4135-9814-C36CFA55540D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{279448B8-94D0-4135-9814-C36CFA55540D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{279448B8-94D0-4135-9814-C36CFA55540D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
