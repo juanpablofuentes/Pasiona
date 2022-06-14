@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosClases", "EjemplosC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosHerencia", "EjemplosHerencia\EjemplosHerencia.csproj", "{262E3152-6FED-4378-8E9B-CBAC26DA8C7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pruebas", "Pruebas\Pruebas.csproj", "{205E5A0E-B646-4575-B5FE-130BF0A45E5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pruebas", "Pruebas\Pruebas.csproj", "{205E5A0E-B646-4575-B5FE-130BF0A45E5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPapelTijera_v01", "PiedraPapelTijera_v01\PiedraPapelTijera_v01.csproj", "{30E4A57B-54AC-44A6-9D87-A80732482A40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{205E5A0E-B646-4575-B5FE-130BF0A45E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{205E5A0E-B646-4575-B5FE-130BF0A45E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{205E5A0E-B646-4575-B5FE-130BF0A45E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E4A57B-54AC-44A6-9D87-A80732482A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E4A57B-54AC-44A6-9D87-A80732482A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E4A57B-54AC-44A6-9D87-A80732482A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E4A57B-54AC-44A6-9D87-A80732482A40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
