@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 
 ArrayList arryList1 = new ArrayList();
+
 //Añadir elementos uno a uno
 arryList1.Add(1);
 arryList1.Add("Eva");
@@ -11,6 +12,7 @@ ArrayList arryList2 = new ArrayList() { 100, 200 };
 
 //Añadir un rango
 arryList1.AddRange(arryList2);
+
 //Lo mostramos con tipo
 Console.WriteLine("Contenido del arrraylist");
 foreach (var item in arryList1)
@@ -65,7 +67,6 @@ void displayArrayList(ArrayList lista)
 public class comparador : IComparer
 {
 
-    // Calls CaseInsensitiveComparer.Compare with the parameters reversed.
     int IComparer.Compare(Object x, Object y)
     {
         return (x.ToString().CompareTo(y.ToString()));
