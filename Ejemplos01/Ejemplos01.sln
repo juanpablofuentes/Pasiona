@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPapelTijerasLS_v02", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPapelTijerasSOLID_03", "PiedraPapelTijerasSOLID_03\PiedraPapelTijerasSOLID_03.csproj", "{279448B8-94D0-4135-9814-C36CFA55540D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPepelTijera_04", "PiedraPepelTijera_04\PiedraPepelTijera_04.csproj", "{28201FD4-7ED9-4E95-BA2F-1D540FA82DAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosNoGenericas", "EjemplosNoGenericas\EjemplosNoGenericas.csproj", "{53756875-8CD3-4BBA-8195-FC7385F9EF9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{279448B8-94D0-4135-9814-C36CFA55540D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{279448B8-94D0-4135-9814-C36CFA55540D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{279448B8-94D0-4135-9814-C36CFA55540D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28201FD4-7ED9-4E95-BA2F-1D540FA82DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28201FD4-7ED9-4E95-BA2F-1D540FA82DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28201FD4-7ED9-4E95-BA2F-1D540FA82DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28201FD4-7ED9-4E95-BA2F-1D540FA82DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53756875-8CD3-4BBA-8195-FC7385F9EF9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53756875-8CD3-4BBA-8195-FC7385F9EF9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53756875-8CD3-4BBA-8195-FC7385F9EF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53756875-8CD3-4BBA-8195-FC7385F9EF9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
