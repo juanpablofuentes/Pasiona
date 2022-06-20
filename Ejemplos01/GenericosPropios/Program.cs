@@ -41,6 +41,8 @@ Persona juan = new Persona("Juan");
 Prueba<Persona> p2 = new Prueba<Persona>(juan);
 Console.WriteLine(p2.igual(juan));
 Console.WriteLine(p2.igual(new Persona("Juan")));
+
+DataStore<Animal> dsa = new DataStore<Animal>();
 public class ClsCalculator
 {
     public static bool AreEqual<T>(T value1, T value2)
@@ -61,6 +63,10 @@ class Coleccion<T>
     {
         foreach (T el in elementos)
         {
+            if (el is Animal animal)
+            {
+                Console.Write(animal.Ruido());
+            }
             Console.WriteLine(el);
         }
     }
@@ -74,6 +80,10 @@ class Animal
     public Animal(string nombre)
     {
         Nombre = nombre;
+    }
+    public String Ruido()
+    {
+        return "GRRRR";
     }
     public override string ToString()
     {
@@ -125,7 +135,10 @@ class ClaseGenerica<T>
 
     public T propiedadGenerica { get; set; }
 }
-
+class Foo
+{
+    public int valor { get; set; }
+}
 
 class Persona
 {
@@ -157,4 +170,9 @@ class Prueba<T>
     {
         return interna.Equals(valor);
     }
+}
+
+class DataStore<T> where T : class, new()
+{
+    public T Data { get; set; }
 }
