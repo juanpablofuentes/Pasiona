@@ -1,4 +1,8 @@
-﻿
+﻿int[] a = { 1, 2, 3, 4 };
+
+
+
+
 if (ClsCalculator.AreEqual<double>(10.5, 20.5))
 {
     Console.WriteLine("Iguales");
@@ -42,7 +46,7 @@ Prueba<Persona> p2 = new Prueba<Persona>(juan);
 Console.WriteLine(p2.igual(juan));
 Console.WriteLine(p2.igual(new Persona("Juan")));
 
-DataStore<Animal> dsa = new DataStore<Animal>();
+
 public class ClsCalculator
 {
     public static bool AreEqual<T>(T value1, T value2)
