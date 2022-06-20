@@ -19,6 +19,7 @@ namespace AgendaTelefonos
             a.agregarContacto("Rosa", "3333");
             Console.WriteLine(a);
             Console.WriteLine(   String.Join(",",a.repetidos()));
+            Console.WriteLine(   String.Join(",",a.repetidos2()));
         }
     }
 }

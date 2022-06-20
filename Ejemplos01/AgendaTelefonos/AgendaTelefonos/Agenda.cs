@@ -42,5 +42,18 @@ namespace AgendaTelefonos
             return valores.Distinct().ToList();
 
         }
+        public List<string> repetidos2()
+        {
+            List<string> valores = new List<string>();
+            foreach (var v in lista)
+            {
+                if (nombre(v.Value).Count > 1)
+                {
+                    valores.Add(v.Key);
+                }
+            }
+            return valores;
+
+        }
     }
 }
