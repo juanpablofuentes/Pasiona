@@ -8,8 +8,19 @@ arryList1.Add("Eva");
 arryList1.Add(3);
 arryList1.Add(4.5);
 
-ArrayList arryList2 = new ArrayList() { 100, 200 };
 
+
+ArrayList arryList2 = new ArrayList() { 100, 200, 100,100 };
+
+arryList2.Sort();
+for(int i = arryList2.Count-1; i >0; i--)
+{
+    if (arryList2[i].ToString() == arryList2[i - 1].ToString())
+    {
+        arryList2.RemoveAt(i);
+    }
+}
+displayArrayList(arryList2);
 //Añadir un rango
 arryList1.AddRange(arryList2);
 
