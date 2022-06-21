@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campeonato", "Campeonato\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ikea", "..\..\CSharp-master\TiposGenericos\Ikea\Ikea\Ikea.csproj", "{E763478E-8415-4471-BF20-E154770292E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexadores", "Indexadores\Indexadores.csproj", "{8356B257-312F-4195-8791-759D31DA6CF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{E763478E-8415-4471-BF20-E154770292E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E763478E-8415-4471-BF20-E154770292E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E763478E-8415-4471-BF20-E154770292E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8356B257-312F-4195-8791-759D31DA6CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8356B257-312F-4195-8791-759D31DA6CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8356B257-312F-4195-8791-759D31DA6CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8356B257-312F-4195-8791-759D31DA6CF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
