@@ -109,6 +109,10 @@ namespace Campeonato
                              StringSplitOptions.RemoveEmptyEntries).Length;
         }
 
+        public static string Trim(this string str, char c)
+        {
+            return str.Replace(c, '_');
+        }
         public static bool IsGreaterThan(this int i, int value)
         {
             return i > value;

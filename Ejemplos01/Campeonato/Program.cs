@@ -19,4 +19,4 @@ liga.gana("rosa");
 //liga.SiguienteRonda();
 
 Console.WriteLine("hola wue tal".WordCount());
-Console.WriteLine(300.IsGreaterThan(20)); ;
+Console.WriteLine(300.IsGreaterThan(20)); 
