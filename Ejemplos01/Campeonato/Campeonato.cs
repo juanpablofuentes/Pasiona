@@ -17,7 +17,7 @@ namespace Campeonato
 
         public void gana(T elemento)
         {
-            int pos=torneo.IndexOf(elemento);
+            int pos = torneo.IndexOf(elemento);
             if (pos == -1)
             {
                 throw new Exception("Elemento no encontrado");
@@ -47,7 +47,7 @@ namespace Campeonato
             {
                 throw new Exception("Faltan ganadores");
             }
-            foreach(T el in torneo)
+            foreach (T el in torneo)
             {
                 if (jugadores[el])
                 {
@@ -66,9 +66,9 @@ namespace Campeonato
             {
                 torneo = jugadores.Keys.ToList();
                 torneo.Shuffle();
-                for(int i = 0; i < jugadores.Count; i++)
+                for (int i = 0; i < jugadores.Count; i++)
                 {
-                   
+
                     if (i % 2 == 0)
                     {
                         Console.WriteLine("----------");
@@ -78,7 +78,7 @@ namespace Campeonato
             }
             else
             {
-                throw new Exception("Jugadores no multiplos de 2");
+                throw new Exception("Jugadores no potencias de 2");
             }
         }
 
@@ -88,19 +88,30 @@ namespace Campeonato
         }
     }
 
-    static class Extension {
+    static class Extension
+    {
         private static Random rng = new Random();
         public static void Shuffle<T>(this IList<T> list)
-    {
-        int n = list.Count;
-        while (n > 1)
         {
-            n--;
-            int k = rng.Next(n + 1);
-            T value = list[k];
-            list[k] = list[n];
-            list[n] = value;
+            int n = list.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = rng.Next(n + 1);
+                T value = list[k];
+                list[k] = list[n];
+                list[n] = value;
+            }
         }
-    }
+        public static int WordCount(this string str)
+        {
+            return str.Split(new char[] { ' ', '.', '?' },
+                             StringSplitOptions.RemoveEmptyEntries).Length;
+        }
+
+        public static bool IsGreaterThan(this int i, int value)
+        {
+            return i > value;
+        }
     }
 }

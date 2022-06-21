@@ -13,7 +13,10 @@ Console.WriteLine(liga);
 liga.gana("eva");
 Console.WriteLine(liga);
 liga.gana("rosa");
-Console.WriteLine(liga);
-liga.SiguienteRonda();
-Console.WriteLine(liga);
-liga.SiguienteRonda();
+//Console.WriteLine(liga);
+//liga.SiguienteRonda();
+//Console.WriteLine(liga);
+//liga.SiguienteRonda();
+
+Console.WriteLine("hola wue tal".WordCount());
+Console.WriteLine(300.IsGreaterThan(20)); ;
