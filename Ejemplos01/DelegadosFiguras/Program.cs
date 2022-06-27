@@ -13,6 +13,11 @@ ops += area;
 
 List<double> lados = new List<double> { 1, 2, 4 };
 mostrar(lados, ops);
+
+void PrintUpperCase(string text) => Console.WriteLine(text.ToUpper());
+void PrintUpperCase2(string text) => { Console.WriteLine(text.ToUpper()); };
+
+
 void mostrar(List<double> lista, opDouble operacion)
 {
     foreach (double num in lista)
