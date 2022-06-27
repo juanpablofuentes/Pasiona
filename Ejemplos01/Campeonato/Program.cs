@@ -2,6 +2,7 @@
 
 Campeonato<String> liga = new Campeonato<string>();
 
+
 liga.Add("ana");
 liga.Add("eva");
 liga.Add("rosa");
@@ -17,6 +18,5 @@ liga.gana("rosa");
 //liga.SiguienteRonda();
 //Console.WriteLine(liga);
 //liga.SiguienteRonda();
-
 Console.WriteLine("hola wue tal".WordCount());
 Console.WriteLine(300.IsGreaterThan(20)); 
