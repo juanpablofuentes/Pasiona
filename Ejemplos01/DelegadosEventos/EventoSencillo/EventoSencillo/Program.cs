@@ -12,6 +12,7 @@ namespace EventoSencillo
         {
             Cuenta cc = new Cuenta();
             cc.alertas += avisoCliente;
+            cc.alertas += otroAvisoCliente;
 
             cc.Saldo += 900;
             cc.Saldo -= 90;
@@ -21,6 +22,11 @@ namespace EventoSencillo
         {
             Console.WriteLine(mensaje);
         }
-     
+
+
+        static void otroAvisoCliente(string mensaje)
+        {
+            Console.WriteLine("Esto es el otro aviso "+mensaje);
+        }
     }
 }

@@ -41,7 +41,7 @@ namespace JuegosCartas
 
             temp.Sort(foo);
             return temp[0];
-        }
+            }
         public Jugador APequenya()
         {
             Comparador foo = new Comparador(NumPequenya);
