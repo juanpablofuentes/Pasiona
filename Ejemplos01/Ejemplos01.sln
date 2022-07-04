@@ -21,29 +21,35 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosHerencia", "Ejemplo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pruebas", "Pruebas\Pruebas.csproj", "{205E5A0E-B646-4575-B5FE-130BF0A45E5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPapelTijera_v01", "PiedraPapelTijera_v01\PiedraPapelTijera_v01.csproj", "{30E4A57B-54AC-44A6-9D87-A80732482A40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiedraPapelTijera_v01", "PiedraPapelTijera_v01\PiedraPapelTijera_v01.csproj", "{30E4A57B-54AC-44A6-9D87-A80732482A40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPapelTijerasLS_v02", "PiedraPapelTijerasLS_v02\PiedraPapelTijerasLS_v02.csproj", "{D2BBEB76-4611-4DA8-89D6-9B358B763FF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiedraPapelTijerasLS_v02", "PiedraPapelTijerasLS_v02\PiedraPapelTijerasLS_v02.csproj", "{D2BBEB76-4611-4DA8-89D6-9B358B763FF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPapelTijerasSOLID_03", "PiedraPapelTijerasSOLID_03\PiedraPapelTijerasSOLID_03.csproj", "{279448B8-94D0-4135-9814-C36CFA55540D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiedraPapelTijerasSOLID_03", "PiedraPapelTijerasSOLID_03\PiedraPapelTijerasSOLID_03.csproj", "{279448B8-94D0-4135-9814-C36CFA55540D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiedraPepelTijera_04", "PiedraPepelTijera_04\PiedraPepelTijera_04.csproj", "{28201FD4-7ED9-4E95-BA2F-1D540FA82DAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PiedraPepelTijera_04", "PiedraPepelTijera_04\PiedraPepelTijera_04.csproj", "{28201FD4-7ED9-4E95-BA2F-1D540FA82DAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayList", "EjemplosNoGenericas\ArrayList.csproj", "{53756875-8CD3-4BBA-8195-FC7385F9EF9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayList", "EjemplosNoGenericas\ArrayList.csproj", "{53756875-8CD3-4BBA-8195-FC7385F9EF9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTable", "HashTable\HashTable.csproj", "{9BCA32AB-7D3D-4B48-A5AE-0A52249D64DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTable", "HashTable\HashTable.csproj", "{9BCA32AB-7D3D-4B48-A5AE-0A52249D64DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genericas", "Genericas\Genericas.csproj", "{71EA2DA3-6C4A-4A28-AE52-EC828573B549}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Genericas", "Genericas\Genericas.csproj", "{71EA2DA3-6C4A-4A28-AE52-EC828573B549}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericosPropios", "GenericosPropios\GenericosPropios.csproj", "{F0936567-EC14-4BA6-99F1-7EF182D42827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericosPropios", "GenericosPropios\GenericosPropios.csproj", "{F0936567-EC14-4BA6-99F1-7EF182D42827}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaTelefonos", "AgendaTelefonos\AgendaTelefonos\AgendaTelefonos.csproj", "{87B72C6A-91F0-40DC-AA66-E169DAC620CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campeonato", "Campeonato\Campeonato.csproj", "{DC38AE8D-2E1A-4635-AFE2-D7B5755C67AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Campeonato", "Campeonato\Campeonato.csproj", "{DC38AE8D-2E1A-4635-AFE2-D7B5755C67AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ikea", "..\..\CSharp-master\TiposGenericos\Ikea\Ikea\Ikea.csproj", "{E763478E-8415-4471-BF20-E154770292E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexadores", "Indexadores\Indexadores.csproj", "{8356B257-312F-4195-8791-759D31DA6CF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Indexadores", "Indexadores\Indexadores.csproj", "{8356B257-312F-4195-8791-759D31DA6CF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JuegosCartas", "JuegosCartas\JuegosCartas.csproj", "{54226A3E-F7CF-474C-A0AE-5AE47F1B8215}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{C2D8D424-461A-4A96-955C-8A3509238D11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmpresaDespidos", "..\..\CSharp-master\DelegadosEventos\EmpresaDespidos\EmpresaDespidos\EmpresaDespidos.csproj", "{9A14C36B-79AB-4DDC-B3F5-F69C065098CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +141,14 @@ Global
 		{8356B257-312F-4195-8791-759D31DA6CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8356B257-312F-4195-8791-759D31DA6CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8356B257-312F-4195-8791-759D31DA6CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54226A3E-F7CF-474C-A0AE-5AE47F1B8215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54226A3E-F7CF-474C-A0AE-5AE47F1B8215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54226A3E-F7CF-474C-A0AE-5AE47F1B8215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54226A3E-F7CF-474C-A0AE-5AE47F1B8215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A14C36B-79AB-4DDC-B3F5-F69C065098CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A14C36B-79AB-4DDC-B3F5-F69C065098CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A14C36B-79AB-4DDC-B3F5-F69C065098CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A14C36B-79AB-4DDC-B3F5-F69C065098CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
