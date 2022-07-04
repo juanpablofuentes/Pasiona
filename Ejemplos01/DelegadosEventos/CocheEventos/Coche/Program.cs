@@ -10,6 +10,7 @@ namespace Coche
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             // Crear objeto
             Coche c1 = new Coche("Panda", 100, 10);
             c1.AlLimite+=CocheAlLimite;
@@ -38,7 +39,7 @@ namespace Coche
         { Console.WriteLine(msg); }
 
         public static void CocheCrítico(string msg)
-        { Console.WriteLine("=> Mensaje crítico: {0}", msg); }
+        { Console.WriteLine("=> €€€ Mensaje crítico: {0}", msg); }
 
         public static void CocheExplotado(string msg)
         { Console.WriteLine(msg); }
