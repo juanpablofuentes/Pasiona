@@ -10,7 +10,7 @@ namespace Enlaces
         {
             using (WebClient client = new WebClient())
             {
-                string s = client.DownloadString("https://amazon.es");
+                string s = client.DownloadString("https://trifulcas.com");
                 Regex r = new Regex(@"<a.*?href=(""|')(?<href>.*?)(""|').*?>(?<value>.*?)</a>");
 
                 foreach (Match match in r.Matches(s))

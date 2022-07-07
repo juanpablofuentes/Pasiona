@@ -63,6 +63,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmpresaDespidos", "Delegado
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqBasico", "..\..\CSharp-master\LINQ\LinqBasico\LinqBasico\LinqBasico.csproj", "{4A5D42E9-B58A-4640-AFE8-4EF2892A1F11}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpresionesRegulares", "Regex\ExpresionesRegulares\ExpresionesRegulares\ExpresionesRegulares.csproj", "{225063A3-6C7F-4E83-96E9-B4913C4E05CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enlaces", "Regex\Enlaces\Enlaces\Enlaces.csproj", "{9C0371FB-A97B-4F91-8620-6A856AF92025}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +193,14 @@ Global
 		{4A5D42E9-B58A-4640-AFE8-4EF2892A1F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A5D42E9-B58A-4640-AFE8-4EF2892A1F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A5D42E9-B58A-4640-AFE8-4EF2892A1F11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{225063A3-6C7F-4E83-96E9-B4913C4E05CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{225063A3-6C7F-4E83-96E9-B4913C4E05CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{225063A3-6C7F-4E83-96E9-B4913C4E05CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{225063A3-6C7F-4E83-96E9-B4913C4E05CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C0371FB-A97B-4F91-8620-6A856AF92025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C0371FB-A97B-4F91-8620-6A856AF92025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C0371FB-A97B-4F91-8620-6A856AF92025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C0371FB-A97B-4F91-8620-6A856AF92025}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
