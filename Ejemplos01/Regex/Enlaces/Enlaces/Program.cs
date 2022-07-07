@@ -13,7 +13,7 @@ namespace Enlaces
             String folder = @"C:\Users\incid\OneDrive\Imágenes\descargas\";
             using (WebClient client = new WebClient())
             {
-                string s = client.DownloadString();
+                string s = client.DownloadString(site);
                 Regex r = new Regex(@"<img.*?src=(""|')(?<imagen>.*?)(""|').*?>");
         //      Regex r = new Regex(@"<a.*?href=(""|')(?<href>.*?)(""|').*?>(?<value>.*?)</a>");
 
