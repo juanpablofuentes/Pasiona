@@ -19,7 +19,13 @@ namespace AlumnosCursos
             Mail = mail;
             Curso = curso;
         }
-
+        public Alumno(string nombre, string dNI, string mail, int cursoId)
+        {
+            Nombre = nombre;
+            DNI = dNI;
+            Mail = mail;
+            CursoId = cursoId;
+        }
         public int Id { get; set; }
         public String Nombre { get; set; }
         public String DNI { get; set; }
