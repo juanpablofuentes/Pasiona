@@ -27,5 +27,10 @@ namespace AlumnosCursos
 
         public int CursoId { get; set; }
         public Curso Curso { get; set; }
+
+        public override string ToString()
+        {
+            return Nombre+", "+DNI+", "+Mail+", Curso: "+Curso.Nombre;
+        }
     }
 }
