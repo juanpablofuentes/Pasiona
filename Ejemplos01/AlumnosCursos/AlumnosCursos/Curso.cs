@@ -18,5 +18,9 @@ namespace AlumnosCursos
         public String Nombre { get; set; }
         public int Creditos { get; set; }
         public List<Alumno>? Alumnos { get; set; }
+
+        public int? ProfesorId { get; set; }
+        public Profesor? Profesor { get; set; }
+        List<Curso_Asignatura> Asignaturas { get; set; }
     }
 }

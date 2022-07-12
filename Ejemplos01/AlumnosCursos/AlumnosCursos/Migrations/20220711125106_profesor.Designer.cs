@@ -4,6 +4,7 @@ using AlumnosCursos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AlumnosCursos.Migrations
 {
     [DbContext(typeof(Contexto))]
-    partial class ContextoModelSnapshot : ModelSnapshot
+    [Migration("20220711125106_profesor")]
+    partial class profesor
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,26 +54,6 @@ namespace AlumnosCursos.Migrations
                     b.ToTable("Alumnos");
                 });
 
-            modelBuilder.Entity("AlumnosCursos.Asignatura", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("Horas")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Asignaturas");
-                });
-
             modelBuilder.Entity("AlumnosCursos.Curso", b =>
                 {
                     b.Property<int>("Id")
@@ -97,29 +79,6 @@ namespace AlumnosCursos.Migrations
                     b.ToTable("Cursos");
                 });
 
-            modelBuilder.Entity("AlumnosCursos.Curso_Asignatura", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("AsignaturaId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CursoId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AsignaturaId");
-
-                    b.HasIndex("CursoId");
-
-                    b.ToTable("Cursos_Asignaturas");
-                });
-
             modelBuilder.Entity("AlumnosCursos.Profesor", b =>
                 {
                     b.Property<int>("Id")
@@ -138,7 +97,7 @@ namespace AlumnosCursos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Profesores");
+                    b.ToTable("Profesor");
                 });
 
             modelBuilder.Entity("AlumnosCursos.Alumno", b =>
@@ -159,25 +118,6 @@ namespace AlumnosCursos.Migrations
                         .HasForeignKey("ProfesorId");
 
                     b.Navigation("Profesor");
-                });
-
-            modelBuilder.Entity("AlumnosCursos.Curso_Asignatura", b =>
-                {
-                    b.HasOne("AlumnosCursos.Asignatura", "Asignatura")
-                        .WithMany()
-                        .HasForeignKey("AsignaturaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AlumnosCursos.Curso", "Curso")
-                        .WithMany()
-                        .HasForeignKey("CursoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Asignatura");
-
-                    b.Navigation("Curso");
                 });
 
             modelBuilder.Entity("AlumnosCursos.Curso", b =>
