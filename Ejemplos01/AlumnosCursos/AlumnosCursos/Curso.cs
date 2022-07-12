@@ -21,6 +21,6 @@ namespace AlumnosCursos
 
         public int? ProfesorId { get; set; }
         public Profesor? Profesor { get; set; }
-        List<Curso_Asignatura> Asignaturas { get; set; }
+        public List<Curso_Asignatura> Asignaturas { get; set; }
     }
 }

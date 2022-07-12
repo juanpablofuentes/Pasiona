@@ -25,15 +25,16 @@ namespace AlumnosCursos
             //contexto.Add(a);
             //contexto.Add(b);
             //contexto.SaveChanges();
-            Curso_Asignatura ca = new Curso_Asignatura();
-            ca.AsignaturaId = 3;
-            ca.CursoId = 4;
-            Curso_Asignatura cb = new Curso_Asignatura();
-            cb.AsignaturaId = 4;
-            cb.CursoId = 4;
-            contexto.Add(ca);
-            contexto.Add(cb);
-            contexto.SaveChanges();
+            //Curso_Asignatura ca = new Curso_Asignatura();
+            //ca.AsignaturaId = 3;
+            //ca.CursoId = 4;
+            //Curso_Asignatura cb = new Curso_Asignatura();
+            //cb.AsignaturaId = 4;
+            //cb.CursoId = 4;
+            //contexto.Add(ca);
+            //contexto.Add(cb);
+            //contexto.SaveChanges();
+            Curso c = contexto.Cursos.Where(c => c.Id == 3).Include(c => c.Asignaturas).ThenInclude(ca => ca.Asignatura).First();
         }
     }
 }
