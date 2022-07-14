@@ -7,6 +7,8 @@ namespace AlumnosCursos
         static void Main(string[] args)
         {
            var contexto=new Contexto();
+            var ca=contexto.CursoAsigs.ToList();
+            Console.WriteLine(String.Join(",",ca));
             //Curso daw = new Curso("DAW 2", 200);
             //contexto.Add(daw);
             //contexto.SaveChanges();
@@ -34,7 +36,7 @@ namespace AlumnosCursos
             //contexto.Add(ca);
             //contexto.Add(cb);
             //contexto.SaveChanges();
-            Curso c = contexto.Cursos.Where(c => c.Id == 3).Include(c => c.Asignaturas).ThenInclude(ca => ca.Asignatura).First();
+          //  Curso c = contexto.Cursos.Where(c => c.Id == 3).Include(c => c.Asignaturas).ThenInclude(ca => ca.Asignatura).First();
         }
     }
 }

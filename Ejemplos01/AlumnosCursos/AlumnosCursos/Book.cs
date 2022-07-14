@@ -7,19 +7,10 @@ using System.Threading.Tasks;
 
 namespace AlumnosCursos
 {
-    internal class Asignatura
+    [Table("Books", Schema="test")]
+    internal class Book
     {
-        public Asignatura(string nombre, int horas)
-        {
-            Nombre = nombre;
-            Horas = horas;
-        }
-
         public int Id { get; set; }
         public String Nombre { get; set; }
-        [Column("tiempo")]
-        public int Horas { get; set; }
-
-        List<Curso_Asignatura> Cursos { get; set; }
     }
 }

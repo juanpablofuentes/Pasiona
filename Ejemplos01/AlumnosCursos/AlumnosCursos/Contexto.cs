@@ -21,5 +21,7 @@ namespace AlumnosCursos
         public DbSet<Profesor> Profesores{ get; set; }
         public DbSet<Asignatura> Asignaturas{ get; set; }
         public DbSet<Curso_Asignatura> Cursos_Asignaturas { get; set; }
+        public DbSet<Book> Book{ get; set; }
+        public DbSet<CursoAsig> CursoAsigs{ get; set; }
     }
 }
