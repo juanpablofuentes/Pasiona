@@ -11,6 +11,7 @@ namespace AlumnosCursos
 {
     [Table("cursoas")]
     [Keyless]
+    [NotMapped]
     internal class CursoAsig
     {
         public String Nombre { get; set; }

@@ -49,7 +49,7 @@ namespace AlumnosCursos.Migrations
 
                     b.HasIndex("CursoId");
 
-                    b.ToTable("Alumnos");
+                    b.ToTable("Alumnos", (string)null);
                 });
 
             modelBuilder.Entity("AlumnosCursos.Asignatura", b =>
@@ -70,7 +70,7 @@ namespace AlumnosCursos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Asignaturas");
+                    b.ToTable("Asignaturas", (string)null);
                 });
 
             modelBuilder.Entity("AlumnosCursos.Book", b =>
@@ -112,7 +112,7 @@ namespace AlumnosCursos.Migrations
 
                     b.HasIndex("ProfesorId");
 
-                    b.ToTable("Cursos");
+                    b.ToTable("Cursos", (string)null);
                 });
 
             modelBuilder.Entity("AlumnosCursos.Curso_Asignatura", b =>
@@ -135,7 +135,7 @@ namespace AlumnosCursos.Migrations
 
                     b.HasIndex("CursoId");
 
-                    b.ToTable("Cursos_Asignaturas");
+                    b.ToTable("Cursos_Asignaturas", (string)null);
                 });
 
             modelBuilder.Entity("AlumnosCursos.Profesor", b =>
@@ -156,7 +156,7 @@ namespace AlumnosCursos.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Profesores");
+                    b.ToTable("Profesores", (string)null);
                 });
 
             modelBuilder.Entity("AlumnosCursos.Alumno", b =>
