@@ -4,20 +4,22 @@ namespace testCuadrado
 {
     public class UnitTest1
     {
+        
         [Fact]
         public void ComprobarArea()
         {
             //Arrange: Crear los objetos necesarios
 
-            Cuadrado mic = new Cuadrado(5);
+            Cuadrado mic = new Cuadrado(-5);
 
             //Act
 
-            double area = mic.area();
-
+            Action act = () => mic.area();
+         //   double area = mic.area();
+            Exception exception = Assert.Throws<Exception>(act);
             //Assert
 
-            Assert.Equal(area, 5 * 5);
+            Assert.Equal("Lado incorrecto", exception.Message);
         }
 
         [Theory]

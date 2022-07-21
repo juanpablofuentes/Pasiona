@@ -17,6 +17,7 @@ namespace PruebaxUnit
 
         public double area()
         {
+            if (lado < 0) throw new Exception("Lado incorrecto");
             return lado * lado;
         }
     }

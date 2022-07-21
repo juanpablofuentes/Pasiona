@@ -45,6 +45,19 @@ namespace JuegoMusTest
             //Assert
 
             Assert.Equal(ganador, JuegoMus.Jugadores[1]);
+
+            JuegoMus.Jugadores[0].Mano = new List<Carta>() { new Carta("Oros", 12), new Carta("Oros", 11), new Carta("Oros", 5), new Carta("Oros", 1) };
+            JuegoMus.Jugadores[1].Mano = new List<Carta>() { new Carta("Oros", 12), new Carta("Oros", 11), new Carta("Oros", 5), new Carta("Oros", 2) };
+            JuegoMus.Jugadores[2].Mano = new List<Carta>() { new Carta("Oros", 11), new Carta("Oros", 11), new Carta("Oros", 5), new Carta("Oros", 2) };
+            JuegoMus.Jugadores[3].Mano = new List<Carta>() { new Carta("Oros", 12), new Carta("Oros", 12), new Carta("Oros", 5), new Carta("Oros", 2) };
+
+            //Act
+
+             ganador = JuegoMus.AGrande();
+
+            //Assert
+
+            Assert.Equal(ganador, JuegoMus.Jugadores[3]);
         }
 
         [Theory]

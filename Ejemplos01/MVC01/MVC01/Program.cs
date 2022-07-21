@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using MVC01.Models;
+
 namespace MVC01
 {
     public class Program
@@ -8,7 +11,8 @@ namespace MVC01
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddDbContext<Contexto>(options =>
+                 options.UseSqlServer("Server=.\\SQLExpress;Database=alumno;Trusted_Connection=True;"));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
