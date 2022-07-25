@@ -81,7 +81,7 @@ namespace ProdProv.Controllers
             {
                 return NotFound();
             }
-            ViewData["ProveedorId"] = new SelectList(_context.Proveedores, "Id", "Id", producto.ProveedorId);
+            ViewData["ProveedorId"] = new SelectList(_context.Proveedores, "Id", "Nombre", producto.ProveedorId);
             return View(producto);
         }
 

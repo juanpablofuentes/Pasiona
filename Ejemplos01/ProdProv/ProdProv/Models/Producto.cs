@@ -7,6 +7,6 @@
         public Decimal Precio { get; set; }
 
         public int ProveedorId { get; set; }
-        public  Proveedor? Proveedor { get; set; }
+        public Proveedor? Proveedor { get; set; }
     }
 }
