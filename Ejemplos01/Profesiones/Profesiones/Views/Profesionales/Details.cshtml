@@ -1,0 +1,82 @@
+﻿@model Profesiones.Models.Profesional
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalle</h1>
+
+<div>
+    <h4>Profesional</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Mail)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Mail)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Activo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Activo)
+        </dd>
+    </dl>
+    @if (Model.Actividades.Count > 0)
+    {
+        <hr />
+        <h4>Actividades</h4>
+        <form asp-action="AddActividad">
+            <div class="form-group row">
+                <input type="hidden" id="ProfesionalId" name="ProfesionalId" value="@Model.Id" />
+                <div class="col-sm-9">
+                    <select id="ActividadId" name="ActividadId" class="form-control" asp-items="ViewBag.ActividadId"></select>
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary">Añadir actividad</button>
+                </div>
+            </div>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Actividades[0].Actividad.Nombre)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Actividades)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Actividad.Nombre)
+
+                        </td>
+                        <td><a asp-controller="ProfesionalesActividades" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

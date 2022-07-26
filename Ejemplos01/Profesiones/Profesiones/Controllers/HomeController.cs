@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProdProv.Models;
+using Profesiones.Models;
 using System.Diagnostics;
 
-namespace ProdProv.Controllers
+namespace Profesiones.Controllers
 {
     public class HomeController : Controller
     {
@@ -15,17 +15,20 @@ namespace ProdProv.Controllers
 
         public IActionResult Index()
         {
-            return View("Index2");
-        }
-
-        public IActionResult Privacy()
-        {
             return View();
         }
 
-        public bool Hola(int Id)
+        [HttpPut]
+        public IActionResult Privacy()
         {
-            return true;
+            return Content("PUT como texto ojo.");
+        }
+
+        [HttpPost]
+        [ActionName("Privacy")]
+        public IActionResult Privacy2(String? nombre)
+        {
+            return Content("POST para probar "+nombre);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

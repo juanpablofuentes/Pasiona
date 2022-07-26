@@ -5,103 +5,105 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using ProdProv.Models;
+using Profesiones.Models;
 
-namespace ProdProv.Controllers
+namespace Profesiones.Controllers
 {
-    public class ProveedoresController : Controller
+    public class ActividadsController : Controller
     {
         private readonly Contexto _context;
 
-        public ProveedoresController(Contexto context)
+        public ActividadsController(Contexto context)
         {
             _context = context;
         }
 
-        // GET: Proveedores
+        // GET: Actividads
         public async Task<IActionResult> Index()
         {
-              return _context.Proveedores != null ? 
-                          View(await _context.Proveedores.ToListAsync()) :
-                          Problem("Entity set 'Contexto.Proveedores'  is null.");
+              return _context.Actividad != null ? 
+                          View(await _context.Actividad.ToListAsync()) :
+                          Problem("Entity set 'Contexto.Actividad'  is null.");
         }
-       
-            // GET: Proveedores/Details/5
-            public async Task<IActionResult> Details(int? id)
+
+        // GET: Actividads/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Proveedores == null)
+            if (id == null || _context.Actividad == null)
             {
                 return NotFound();
             }
 
-            var proveedor = await _context.Proveedores
+            var actividad = await _context.Actividad
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (proveedor == null)
+            if (actividad == null)
             {
                 return NotFound();
             }
 
-            return View(proveedor);
+            return View(actividad);
         }
 
-        // GET: Proveedores/Create
+        // GET: Actividads/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Proveedores/Create
+        // POST: Actividads/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nombre,NIF,Mail")] Proveedor proveedor)
+        public async Task<IActionResult> Create([Bind("Id,Nombre")] Actividad actividad)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(proveedor);
+                _context.Add(actividad);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(proveedor);
+            return View(actividad);
         }
 
-        // GET: Proveedores/Edit/5
+        // GET: Actividads/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Proveedores == null)
+            if (id == null || _context.Actividad == null)
             {
                 return NotFound();
             }
-            var proveedor = await _context.Proveedores.FindAsync(id);
-            if (proveedor == null) {
+
+            var actividad = await _context.Actividad.FindAsync(id);
+            if (actividad == null)
+            {
                 return NotFound();
             }
-            return View(proveedor);
+            return View(actividad);
         }
 
-        // POST: Proveedores/Edit/5
+        // POST: Actividads/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,NIF,Mail")] Proveedor proveedor)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre")] Actividad actividad)
         {
-            if (id != proveedor.Id)
+            if (id != actividad.Id)
             {
                 return NotFound();
             }
-            
+
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(proveedor);
+                    _context.Update(actividad);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProveedorExists(proveedor.Id))
+                    if (!ActividadExists(actividad.Id))
                     {
                         return NotFound();
                     }
@@ -112,55 +114,49 @@ namespace ProdProv.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(proveedor);
+            return View(actividad);
         }
 
-        // GET: Proveedores/Delete/5
+        // GET: Actividads/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Proveedores == null)
+            if (id == null || _context.Actividad == null)
             {
                 return NotFound();
             }
 
-            var proveedor = await _context.Proveedores
+            var actividad = await _context.Actividad
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (proveedor == null)
+            if (actividad == null)
             {
                 return NotFound();
             }
 
-            return View(proveedor);
+            return View(actividad);
         }
 
-        // POST: Proveedores/Delete/5
-        [HttpPost]
+        // POST: Actividads/Delete/5
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Proveedores == null)
+            if (_context.Actividad == null)
             {
-                return Problem("Entity set 'Contexto.Proveedores'  is null.");
+                return Problem("Entity set 'Contexto.Actividad'  is null.");
             }
-            var proveedor = await _context.Proveedores.FindAsync(id);
-            if (proveedor != null)
+            var actividad = await _context.Actividad.FindAsync(id);
+            if (actividad != null)
             {
-                _context.Proveedores.Remove(proveedor);
+                _context.Actividad.Remove(actividad);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ProveedorExists(int Id)
+        private bool ActividadExists(int id)
         {
-          return (_context.Proveedores?.Any(e => e.Id == Id)).GetValueOrDefault();
+          return (_context.Actividad?.Any(e => e.Id == id)).GetValueOrDefault();
         }
-        public IActionResult Saludo()
-        {
-            return View();
-        }
-       
-
     }
 }
