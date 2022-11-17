@@ -2,9 +2,9 @@
 
 #nullable disable
 
-namespace Profesiones.Migrations
+namespace ApiRest.Migrations
 {
-    public partial class Actividades : Migration
+    public partial class inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -19,6 +19,22 @@ namespace Profesiones.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Actividad", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Profesionales",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Mail = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Activo = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Profesionales", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -45,7 +61,7 @@ namespace Profesiones.Migrations
                         column: x => x.ProfesionalId,
                         principalTable: "Profesionales",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -66,6 +82,9 @@ namespace Profesiones.Migrations
 
             migrationBuilder.DropTable(
                 name: "Actividad");
+
+            migrationBuilder.DropTable(
+                name: "Profesionales");
         }
     }
 }

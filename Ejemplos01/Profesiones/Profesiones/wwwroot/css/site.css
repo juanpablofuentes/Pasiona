@@ -16,3 +16,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+p,h1,h2,h3,h4{
+    color:brown;
+}
+.btn-primary{
+    background-color:palevioletred;
+}

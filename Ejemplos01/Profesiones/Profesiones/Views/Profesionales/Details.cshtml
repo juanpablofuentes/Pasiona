@@ -38,7 +38,7 @@
     @if (Model.Actividades.Count > 0)
     {
         <hr />
-        <h4>Actividades</h4>
+        <h4>@ViewBag.Titulo</h4>
         <form asp-action="AddActividad">
             <div class="form-group row">
                 <input type="hidden" id="ProfesionalId" name="ProfesionalId" value="@Model.Id" />
@@ -57,7 +57,7 @@
                         @Html.DisplayNameFor(model => model.Actividades[0].Actividad.Nombre)
                     </th>
                     <th></th>
-                </tr>
+                </tr> 
             </thead>
             <tbody>
                 @foreach (var item in Model.Actividades)

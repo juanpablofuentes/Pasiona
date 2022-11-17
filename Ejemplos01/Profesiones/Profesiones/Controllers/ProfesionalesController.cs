@@ -46,7 +46,7 @@ namespace Profesiones.Controllers
             }
             var misActividades = _context.ProfesionalesActividades.Where(x => x.ProfesionalId == id).Select(x => x.ActividadId).ToList();
             ViewData["ActividadId"] = new SelectList(_context.Actividad.Where(x => !misActividades.Contains(x.Id)), "Id", "Nombre");
-
+            ViewData["Titulo"] = "Lista de actividades que no tiene este profesional";
             var profesional = await _context.Profesionales.Include(x => x.Actividades).ThenInclude(x => x.Actividad)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (profesional == null)

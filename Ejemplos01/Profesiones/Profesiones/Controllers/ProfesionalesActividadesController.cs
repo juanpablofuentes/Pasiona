@@ -84,8 +84,8 @@ namespace Profesiones.Controllers
             {
                 return NotFound();
             }
-            ViewData["ActividadId"] = new SelectList(_context.Actividad, "Id", "Id", profesionalesActividades.ActividadId);
-            ViewData["ProfesionalId"] = new SelectList(_context.Profesionales, "Id", "Id", profesionalesActividades.ProfesionalId);
+            ViewData["ActividadId"] = new SelectList(_context.Actividad, "Id", "Nombre", profesionalesActividades.ActividadId);
+            ViewData["ProfesionalId"] = new SelectList(_context.Profesionales, "Id", "Nombre", profesionalesActividades.ProfesionalId);
             return View(profesionalesActividades);
         }
 
@@ -121,8 +121,8 @@ namespace Profesiones.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ActividadId"] = new SelectList(_context.Actividad, "Id", "Id", profesionalesActividades.ActividadId);
-            ViewData["ProfesionalId"] = new SelectList(_context.Profesionales, "Id", "Id", profesionalesActividades.ProfesionalId);
+            ViewData["ActividadId"] = new SelectList(_context.Actividad, "Id", "Nombre", profesionalesActividades.ActividadId);
+            ViewData["ProfesionalId"] = new SelectList(_context.Profesionales, "Id", "Nombre", profesionalesActividades.ProfesionalId);
             return View(profesionalesActividades);
         }
 
