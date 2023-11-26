@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Delegados.Numeros;
 
 namespace Delegados
 {
@@ -52,21 +53,20 @@ namespace Delegados
             n.lista.Add(30);
             n.lista.Add(40);
             n.lista.Add(50);
-            operacion op;
             Console.WriteLine(n);
             Console.WriteLine("------");
-            op = Operaciones.cuadrado;
+            n.Operacion = Operaciones.cuadrado;
 
-            n.procesar(op);
+            n.procesar();
             Console.WriteLine(n);
             Console.WriteLine("------");
-            op = Operaciones.raiz;
-            n.procesar(op);
+            n.Operacion = Operaciones.raiz;
+            n.procesar();
             Console.WriteLine(n);
             Console.WriteLine("------");
-            op = Operaciones.doble;
-            op += Operaciones.cuadrado;
-            n.procesar(op);
+            n.Operacion = Operaciones.doble;
+            n.Operacion += Operaciones.cuadrado;
+            n.procesar();
             Console.WriteLine(n);
             Console.WriteLine("------");
         }

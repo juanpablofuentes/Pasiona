@@ -9,12 +9,13 @@ namespace Delegados
     class Numeros
     {
         public List<double> lista = new List<double>();
-
-        public void procesar(operacion op)
+        public delegate double operacion(double value);
+        public operacion Operacion { get; set; }
+        public void procesar()
         {
             for(int i = 0; i < lista.Count; i++)
             {
-                lista[i] = op(lista[i]);
+                lista[i] = Operacion(lista[i]);
             }
         }
 

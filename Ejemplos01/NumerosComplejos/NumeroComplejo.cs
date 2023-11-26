@@ -11,6 +11,7 @@ namespace NumerosComplejos
         public double ParteReal { get; set; }
         public double ParteImaginaria { get; set; }
 
+        // El cálculo del módulo lo encapsulamos dentro de una propiedad de solo lectura
         public double Modulo { get=> Math.Sqrt(ParteReal * ParteReal + ParteImaginaria * ParteImaginaria);}
         // Constructor
         public NumeroComplejo(double parteReal, double parteImaginaria)
@@ -94,8 +95,15 @@ namespace NumerosComplejos
             return ParteReal+" + "+ParteImaginaria+"i";
         }
 
-       
-        public override bool Equals(object obj)
+        // Sobrecarga de Hashcode
+        public override int GetHashCode()
+        {
+            // Utilizamos el propio método de combinar que nos garantiza una función estable y bien estructurada
+            return HashCode.Combine(ParteImaginaria, ParteReal);
+        }
+
+        // Sobrecargamos equals que suele ir relacionado con hashcode: nos servirá para que al usarlos como clave se reconozcan como iguales
+        public override bool Equals(object? obj)
         {
             if (obj == null || GetType() != obj.GetType())
             {
@@ -103,6 +111,7 @@ namespace NumerosComplejos
             }
 
             NumeroComplejo other = (NumeroComplejo)obj;
+            // Nos aprovechamos de que ya tenemos el operador == sobrecargado
             return this == other;
         }
         public int CompareTo(NumeroComplejo? other)

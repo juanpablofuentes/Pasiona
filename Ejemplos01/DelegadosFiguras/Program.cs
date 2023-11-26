@@ -4,6 +4,7 @@ opDouble ops = circunferencia;
 ops += areaCirculo;
 ops += volumenEsfera;
 
+
 mostrar(radios, ops);
 mostrar2(radios, areaCirculo);
 
@@ -13,6 +14,7 @@ ops += area;
 
 List<double> lados = new List<double> { 1, 2, 4 };
 mostrar(lados, ops);
+mostrar2(lados, ops.Invoke);
 
 void PrintUpperCase(string text) => Console.WriteLine(text.ToUpper());
 void PrintUpperCase2(string text) =>  Console.WriteLine(text.ToUpper()); ;
