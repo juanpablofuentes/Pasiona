@@ -1,0 +1,41 @@
+﻿-MIRAR ELMAYOR:
+//foreach (Jugador ju in jugadorList)
+            //{
+            //    if (ju.Nombre == jugadorMayor.Nombre)
+            //    {
+            //        for (int i = 0; i < ju.MisCartas1.Length; i++)
+            //        {
+            //            Console.WriteLine(ju.MisCartas1[i]);
+            //        }
+            //    }
+            //}
+            ////Console.WriteLine(jugadorMayor.Nombre);
+            //Console.WriteLine(max);
+
+-MIRAR AL MENOR;
+ //foreach (Jugador ju in jugadorList)
+            //{
+            //    if (ju.Nombre == jugadorMenor.Nombre)
+            //    {
+            //        for (int i = 0; i < ju.MisCartas1.Length; i++)
+            //        {
+            //            Console.WriteLine(ju.MisCartas1[i]);
+            //        }
+            //    }
+            //}
+-MIRAR REPARTIR:
+            Console.WriteLine("______________");
+            //for (i = 0; i < cartasRepartir.Length; i++)
+            //{
+            //    Console.WriteLine(cartasRepartir[i]);
+            //}
+-BARAJAR:
+//for (int i = 0; i < cartas.Length; i++)
+            //{
+            //    Console.WriteLine(cartas[i]);
+            //}
+-CREAR BARAJA
+//for (int i = 0; i < cartas.Length; i++)
+            //{
+            //    Console.WriteLine(cartas[i]);
+            //}
