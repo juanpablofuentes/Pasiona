@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejemplos01", "Ejemplos01\Ejemplos01.csproj", "{92D99F9D-80FE-4E04-A569-04109D9198CF}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ejercicios01", "Ejercicios01\Ejercicios01.csproj", "{F10B8FC9-4E03-4932-B8A2-B8CAC3E583FB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosCadenas", "EjemplosCadenas\EjemplosCadenas.csproj", "{AFFC1121-16A4-4143-A86E-83D268187C06}"
@@ -53,8 +51,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Producto", "DelegadosEvento
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FiestaAlumnos", "FiestaAlumnos\FiestaAlumnos.csproj", "{80EBE872-EC56-482F-88FB-F540C125175F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algoritmia", "Algoritmia\Algoritmia.csproj", "{DBF1EC89-EE91-4A15-BEC6-0CCF9FCEBA9F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JuegosCartas", "JuegosCartas\JuegosCartas.csproj", "{546E9E21-8B6E-44EC-87F4-5297949A43C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventoSencillo", "DelegadosEventos\EventoSencillo\EventoSencillo\EventoSencillo.csproj", "{5F547235-F799-4613-9683-E866DE057FD0}"
@@ -63,16 +59,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmpresaDespidos", "Delegado
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqBasico", "..\..\CSharp-master\LINQ\LinqBasico\LinqBasico\LinqBasico.csproj", "{4A5D42E9-B58A-4640-AFE8-4EF2892A1F11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegosCartasTest", "JuegosCartasTest\JuegosCartasTest.csproj", "{E8C795B7-96C4-478B-AF8C-038A67B3DAEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{92D99F9D-80FE-4E04-A569-04109D9198CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92D99F9D-80FE-4E04-A569-04109D9198CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92D99F9D-80FE-4E04-A569-04109D9198CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92D99F9D-80FE-4E04-A569-04109D9198CF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F10B8FC9-4E03-4932-B8A2-B8CAC3E583FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F10B8FC9-4E03-4932-B8A2-B8CAC3E583FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F10B8FC9-4E03-4932-B8A2-B8CAC3E583FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -169,10 +163,6 @@ Global
 		{80EBE872-EC56-482F-88FB-F540C125175F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80EBE872-EC56-482F-88FB-F540C125175F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80EBE872-EC56-482F-88FB-F540C125175F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBF1EC89-EE91-4A15-BEC6-0CCF9FCEBA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBF1EC89-EE91-4A15-BEC6-0CCF9FCEBA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBF1EC89-EE91-4A15-BEC6-0CCF9FCEBA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBF1EC89-EE91-4A15-BEC6-0CCF9FCEBA9F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{546E9E21-8B6E-44EC-87F4-5297949A43C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{546E9E21-8B6E-44EC-87F4-5297949A43C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{546E9E21-8B6E-44EC-87F4-5297949A43C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -189,6 +179,10 @@ Global
 		{4A5D42E9-B58A-4640-AFE8-4EF2892A1F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A5D42E9-B58A-4640-AFE8-4EF2892A1F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A5D42E9-B58A-4640-AFE8-4EF2892A1F11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8C795B7-96C4-478B-AF8C-038A67B3DAEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C795B7-96C4-478B-AF8C-038A67B3DAEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8C795B7-96C4-478B-AF8C-038A67B3DAEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8C795B7-96C4-478B-AF8C-038A67B3DAEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

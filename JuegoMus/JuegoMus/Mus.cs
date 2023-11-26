@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace JuegosCartas
 {
-    public  class Mus2
+    public  class Mus
     {
        public Jugador[] Jugadores = new Jugador[4];
         Baraja Espanyola;
 
-        public Mus2(Jugador Jugador1, Jugador Jugador2, Jugador Jugador3, Jugador Jugador4)
+        public Mus(Jugador Jugador1, Jugador Jugador2, Jugador Jugador3, Jugador Jugador4)
         {
             Jugadores[0] = Jugador1;
             Jugadores[1] = Jugador2;

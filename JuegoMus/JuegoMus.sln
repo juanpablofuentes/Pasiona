@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoMus", "JuegoMus\JuegoMus.csproj", "{7EDFEAB4-6F43-4076-ACC2-885EB57A7819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoMusTest", "JuegoMusTest\JuegoMusTest.csproj", "{DE58E9B5-5F47-432B-8221-04F89793D004}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EDFEAB4-6F43-4076-ACC2-885EB57A7819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EDFEAB4-6F43-4076-ACC2-885EB57A7819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EDFEAB4-6F43-4076-ACC2-885EB57A7819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EDFEAB4-6F43-4076-ACC2-885EB57A7819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE58E9B5-5F47-432B-8221-04F89793D004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE58E9B5-5F47-432B-8221-04F89793D004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE58E9B5-5F47-432B-8221-04F89793D004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE58E9B5-5F47-432B-8221-04F89793D004}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEF1EDCF-50A9-4C86-9BA5-671967C4ECAC}
+	EndGlobalSection
+EndGlobal
