@@ -43,6 +43,8 @@ namespace EjemplosFuncActionPredicat
             operaciones(5, 3);
 
 
+
+             
             // Predicado que verifica si un número es par:
 
 
