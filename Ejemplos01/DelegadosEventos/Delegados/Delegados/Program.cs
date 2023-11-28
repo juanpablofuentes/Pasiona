@@ -69,6 +69,25 @@ namespace Delegados
             n.procesar();
             Console.WriteLine(n);
             Console.WriteLine("------");
+
+            operacion cuadrado = x => x * x;
+            Console.WriteLine($"Cuadrado de 5: {cuadrado(5)}");  // Output: 25
+
+            // Ejemplo 2: Función que devuelve el doble de un número
+            operacion doble = x => x * 2;
+            Console.WriteLine($"Doble de 8: {doble(8)}");  // Output: 16
+
+            // Ejemplo 3: Función que calcula la raíz cuadrada de un número
+            operacion raizCuadrada = x => Math.Sqrt(x);
+            Console.WriteLine($"Raíz cuadrada de 9: {raizCuadrada(9)}");  // Output: 3
+
+            // Ejemplo 4: Función que devuelve el valor absoluto de un número
+            operacion valorAbsoluto = x => Math.Abs(x);
+            Console.WriteLine($"Valor absoluto de -7: {valorAbsoluto(-7)}");  // Output: 7
+
+            
+
+
         }
         public static void bienvenida(string nombre)
         {

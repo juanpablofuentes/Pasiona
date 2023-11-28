@@ -14,6 +14,7 @@ namespace ADOEjemplo
             string sql = "insert into alumno (nombre) values (@nombre)";
             SqlCommand command = new SqlCommand(sql, connection);
             command.Parameters.AddWithValue("@nombre", "Ana Pi");
+            
             command.ExecuteNonQuery();
             
 
