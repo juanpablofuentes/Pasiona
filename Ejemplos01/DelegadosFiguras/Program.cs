@@ -4,7 +4,8 @@ opDouble ops = circunferencia;
 ops += areaCirculo;
 ops += volumenEsfera;
 
-
+Console.WriteLine(ops(2));
+ops-=areaCirculo;
 mostrar(radios, ops);
 mostrar2(radios, areaCirculo);
 
@@ -16,14 +17,12 @@ List<double> lados = new List<double> { 1, 2, 4 };
 mostrar(lados, ops);
 mostrar2(lados, ops.Invoke);
 
-void PrintUpperCase(string text) => Console.WriteLine(text.ToUpper());
-void PrintUpperCase2(string text) =>  Console.WriteLine(text.ToUpper()); ;
-
 
 void mostrar(List<double> lista, opDouble operacion)
 {
     foreach (double num in lista)
     {
+        // Recorro todos los delegados que contiene el delegado multicast
         foreach (opDouble metodo in operacion.GetInvocationList())
         {
             Console.WriteLine(metodo.Method.Name);
@@ -61,4 +60,5 @@ double area(double lado)
 {
     return lado * lado;
 }
+
 delegate double opDouble(double valor);

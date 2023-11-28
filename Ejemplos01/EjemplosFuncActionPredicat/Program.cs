@@ -103,10 +103,10 @@ namespace EjemplosFuncActionPredicat
             Func<int, int, int> suma = (a, b) => a + b;
 
             // Funciones parcialmente aplicadas (currificadas)
-            Func<int, Func<int, int>> sumaParcial = a => b => suma(a, b);
+            Func<int, Func<int, int>> sumaParcial = (a => b => suma(a, b));
 
             // Utilizando funciones parcialmente aplicadas
-            int resultadoSuma1 = sumaParcial(3)(4);
+            int resultadoSuma1 = sumaParcial(3)(4);//sumaParcial(3)= b => suma(3, b)
             int resultadoSuma2 = sumaParcial(5)(7);
 
             Console.WriteLine(resultadoSuma1);  // Output: 7
@@ -119,11 +119,18 @@ namespace EjemplosFuncActionPredicat
 
 
 
-            Func<int, int> multiplicarPorDos = multiplicar(2);
-            Func<int, int> multiplicarPorTres = multiplicar(3);
+            Func<int, int> multiplicarPorDos = multiplicar(2); // b=>2*b
+            Func<int, int> multiplicarPorTres = multiplicar(3); // b=>3*b
 
             Console.WriteLine(multiplicarPorDos(3)); // Output: 6
             Console.WriteLine(multiplicarPorTres(4)); // Output: 12
+
+            Func<double, Func<double, double>> iva = a => b => a * b;
+
+            Console.WriteLine(iva(.21)(1000));
+
+            Func<double, double> iva21 = iva(.21);
+            Console.WriteLine(iva21(1000));
 
         }
     }
