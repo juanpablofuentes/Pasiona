@@ -18,6 +18,7 @@
                 Console.WriteLine("Hilo anónimo.");
             });
             myThread3.Start();
+            
             Console.WriteLine("Main 3 thread is running.");
 
             Thread myThread4 = new Thread(MyThreadFunction);
