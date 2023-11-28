@@ -63,7 +63,7 @@ namespace LINQMetodos
             // 6.Agrupar(GroupBy):    Agrupar alumnos por edad.
 
             var gruposPorEdad = listaAlumnos.GroupBy(alumno => alumno.Edad);
-
+            
             // 7.Filtrar y Proyectar(Where, Select):    Obtener nombres de alumnos mayores de 25 años.
 
             var nombresMayoresDe25 = listaAlumnos

@@ -11,7 +11,12 @@
             Console.WriteLine(a.Modulo);
             Console.WriteLine(a>=b); // True
             Console.WriteLine(a > b); // false
-            List<NumeroComplejo> lista= new List<NumeroComplejo>() { new NumeroComplejo(3, 4), new NumeroComplejo(7, 7), new NumeroComplejo(3, 1), new NumeroComplejo(2, 3), new NumeroComplejo(1, 1) };
+            List<NumeroComplejo> lista= new List<NumeroComplejo>() {
+                new NumeroComplejo(3, 4), 
+                new NumeroComplejo(7, 7),
+                new NumeroComplejo(3, 1), 
+                new NumeroComplejo(2, 3), 
+                new NumeroComplejo(1, 1) };
             Console.WriteLine(String.Join(",",lista));
             // La lista se ordena por lo implementado en compareto
             lista.Sort();
