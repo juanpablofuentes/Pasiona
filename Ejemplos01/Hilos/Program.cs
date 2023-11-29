@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            // Ejemplo de hilo normal
             Thread myThread = new Thread(MyThreadFunction);
             myThread.Start();
             Console.WriteLine("Main 1 thread is running.");

@@ -65,19 +65,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumerosComplejos", "Numeros
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQMetodos", "LINQMetodos\LINQMetodos.csproj", "{584FF41C-3AAE-4D3C-940E-4C7DFAC3F60D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hilos", "Hilos\Hilos.csproj", "{0AAEFDF4-7867-4130-B71D-2A1D38A58B61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hilos", "Hilos\Hilos.csproj", "{0AAEFDF4-7867-4130-B71D-2A1D38A58B61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hilosdescargas", "Hilosdescargas\Hilosdescargas.csproj", "{47057150-BBDE-4EFC-82BF-B0E3617D21BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hilosdescargas", "Hilosdescargas\Hilosdescargas.csproj", "{47057150-BBDE-4EFC-82BF-B0E3617D21BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TareasEjemplos", "TareasEjemplos\TareasEjemplos.csproj", "{1AD473C2-B609-44AF-BD9C-5B9568791C17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TareasEjemplos", "TareasEjemplos\TareasEjemplos.csproj", "{1AD473C2-B609-44AF-BD9C-5B9568791C17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TareasDescargas", "TareasDescargas\TareasDescargas.csproj", "{886F3C28-0BB0-472F-A232-23DD9D643E55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TareasDescargas", "TareasDescargas\TareasDescargas.csproj", "{886F3C28-0BB0-472F-A232-23DD9D643E55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoCEjemplo", "IoCEjemplo\IoCEjemplo.csproj", "{93F131F3-7644-4855-8DC9-6AA7C71E544E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoCEjemplo", "IoCEjemplo\IoCEjemplo.csproj", "{93F131F3-7644-4855-8DC9-6AA7C71E544E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOEjemplo", "ADOEjemplo\ADOEjemplo.csproj", "{BB0817E0-250A-4D08-B16C-D5D43809B45A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADOEjemplo", "ADOEjemplo\ADOEjemplo.csproj", "{BB0817E0-250A-4D08-B16C-D5D43809B45A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosFuncActionPredicat", "EjemplosFuncActionPredicat\EjemplosFuncActionPredicat.csproj", "{20AD35D0-8597-43A4-9BFE-E0656BA6C8A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosFuncActionPredicat", "EjemplosFuncActionPredicat\EjemplosFuncActionPredicat.csproj", "{20AD35D0-8597-43A4-9BFE-E0656BA6C8A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploDelegados", "EjemploDelegados\EjemploDelegados.csproj", "{A6777042-FB6D-4A14-B511-4CC7ACA5122B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosHilos", "EjemplosHilos\EjemplosHilos.csproj", "{BB0B9249-B4F4-4A72-8585-3B281642A3ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploTask", "EjemploTask\EjemploTask.csproj", "{D136A489-82F7-4E84-A701-6C99188C05DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotonTarea", "BotonTarea\BotonTarea.csproj", "{26119AB0-F0FF-405E-9955-B263F61E1844}"
 EndProject
@@ -243,6 +249,18 @@ Global
 		{26119AB0-F0FF-405E-9955-B263F61E1844}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26119AB0-F0FF-405E-9955-B263F61E1844}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26119AB0-F0FF-405E-9955-B263F61E1844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6777042-FB6D-4A14-B511-4CC7ACA5122B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6777042-FB6D-4A14-B511-4CC7ACA5122B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6777042-FB6D-4A14-B511-4CC7ACA5122B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6777042-FB6D-4A14-B511-4CC7ACA5122B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0B9249-B4F4-4A72-8585-3B281642A3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0B9249-B4F4-4A72-8585-3B281642A3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0B9249-B4F4-4A72-8585-3B281642A3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0B9249-B4F4-4A72-8585-3B281642A3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D136A489-82F7-4E84-A701-6C99188C05DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D136A489-82F7-4E84-A701-6C99188C05DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D136A489-82F7-4E84-A701-6C99188C05DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D136A489-82F7-4E84-A701-6C99188C05DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

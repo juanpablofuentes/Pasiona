@@ -9,10 +9,8 @@ namespace Hilosdescargas
             List<string> urls = new List<string>
         {
             "https://files.icyflamestudio.com/200MB.zip",
-            "https://files.icyflamestudio.com/512MB.zip",
-            "https://files.icyflamestudio.com/1GB.bin",
-            "https://files.icyflamestudio.com/100MB.bin"
-    
+            "https://files.icyflamestudio.com/100MB.bin",
+            "https://files.icyflamestudio.com/100MB.bin" 
         };
 
             // Creamos una lista para almacenar los hilos
