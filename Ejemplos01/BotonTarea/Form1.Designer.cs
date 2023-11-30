@@ -34,6 +34,7 @@
             button2 = new Button();
             button3 = new Button();
             textRes = new TextBox();
+            button4 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -90,11 +91,22 @@
             textRes.Size = new Size(100, 335);
             textRes.TabIndex = 5;
             // 
+            // button4
+            // 
+            button4.Location = new Point(379, 117);
+            button4.Name = "button4";
+            button4.Size = new Size(100, 35);
+            button4.TabIndex = 6;
+            button4.Text = "Encolar";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(textRes);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -115,5 +127,6 @@
         private Button button2;
         private Button button3;
         private TextBox textRes;
+        private Button button4;
     }
 }
