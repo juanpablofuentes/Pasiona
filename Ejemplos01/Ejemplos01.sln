@@ -79,13 +79,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADOEjemplo", "ADOEjemplo\AD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosFuncActionPredicat", "EjemplosFuncActionPredicat\EjemplosFuncActionPredicat.csproj", "{20AD35D0-8597-43A4-9BFE-E0656BA6C8A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploDelegados", "EjemploDelegados\EjemploDelegados.csproj", "{A6777042-FB6D-4A14-B511-4CC7ACA5122B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploDelegados", "EjemploDelegados\EjemploDelegados.csproj", "{A6777042-FB6D-4A14-B511-4CC7ACA5122B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosHilos", "EjemplosHilos\EjemplosHilos.csproj", "{BB0B9249-B4F4-4A72-8585-3B281642A3ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemplosHilos", "EjemplosHilos\EjemplosHilos.csproj", "{BB0B9249-B4F4-4A72-8585-3B281642A3ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploTask", "EjemploTask\EjemploTask.csproj", "{D136A489-82F7-4E84-A701-6C99188C05DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploTask", "EjemploTask\EjemploTask.csproj", "{D136A489-82F7-4E84-A701-6C99188C05DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotonTarea", "BotonTarea\BotonTarea.csproj", "{26119AB0-F0FF-405E-9955-B263F61E1844}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotonTarea", "BotonTarea\BotonTarea.csproj", "{283B1171-2A13-4890-BEDF-092E2D54538E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -245,10 +245,6 @@ Global
 		{20AD35D0-8597-43A4-9BFE-E0656BA6C8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20AD35D0-8597-43A4-9BFE-E0656BA6C8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20AD35D0-8597-43A4-9BFE-E0656BA6C8A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{26119AB0-F0FF-405E-9955-B263F61E1844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26119AB0-F0FF-405E-9955-B263F61E1844}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26119AB0-F0FF-405E-9955-B263F61E1844}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26119AB0-F0FF-405E-9955-B263F61E1844}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6777042-FB6D-4A14-B511-4CC7ACA5122B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6777042-FB6D-4A14-B511-4CC7ACA5122B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6777042-FB6D-4A14-B511-4CC7ACA5122B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -261,6 +257,10 @@ Global
 		{D136A489-82F7-4E84-A701-6C99188C05DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D136A489-82F7-4E84-A701-6C99188C05DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D136A489-82F7-4E84-A701-6C99188C05DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{283B1171-2A13-4890-BEDF-092E2D54538E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283B1171-2A13-4890-BEDF-092E2D54538E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283B1171-2A13-4890-BEDF-092E2D54538E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283B1171-2A13-4890-BEDF-092E2D54538E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

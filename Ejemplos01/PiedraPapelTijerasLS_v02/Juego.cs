@@ -22,6 +22,6 @@ namespace Juego_v2
             this.Jugador2.pedirJugada(this.jugadas);
             return comprobar(Jugador1, Jugador2);
         }
-        public abstract  string comprobar(Jugador jugador1, Jugador jugador2);
+        public abstract string comprobar(Jugador jugador1, Jugador jugador2);
     }
 }

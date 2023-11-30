@@ -8,7 +8,7 @@ namespace ADOEjemplo
         static void Main(string[] args)
         {
             var connection = new SqlConnection();
-            connection.ConnectionString = "Data Source=(local);Initial Catalog=pruebas;Integrated Security=True;TrustServerCertificate=True";
+            connection.ConnectionString = "Data Source=ARP\\SQLEXPRESS;Initial Catalog=prueba;Integrated Security=True;TrustServerCertificate=True";
 
 
             connection.Open();
