@@ -24,10 +24,10 @@ namespace ADOEjemplo
             for(int i = 0; i < 10; i++)
             {
                 command.Parameters["@nombre"].Value= "Alumno "+i;
-                command.ExecuteNonQuery();
+                //command.ExecuteNonQuery();
             }
-
-            SqlCommand lectura=new SqlCommand("select * from alumno", connection);
+            sql = "select * from alumno";
+            SqlCommand lectura=new SqlCommand(sql, connection);
             SqlDataReader sqlDataReader = lectura.ExecuteReader();
             while(sqlDataReader.Read())
             {
@@ -37,6 +37,19 @@ namespace ADOEjemplo
                 Console.WriteLine(sqlDataReader["nombre"]);
 
             }
+
+            sqlDataReader.Close();
+            SqlDataAdapter adapter = new SqlDataAdapter(sql,connection);
+            DataSet ds = new DataSet();
+            adapter.Fill(ds);
+
+            foreach(DataRow row in ds.Tables[0].Rows)
+            {
+                Console.WriteLine(row["id"]);
+                Console.WriteLine(row["nombre"]);
+            }
+
+
 
             connection.Close();
         }

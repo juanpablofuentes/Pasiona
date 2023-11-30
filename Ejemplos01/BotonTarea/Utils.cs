@@ -61,5 +61,27 @@ namespace BotonTarea
             Thread.Sleep(5000);
             return filtrado;
         }
+        public static void manejarPila(string nombre, Queue<int> cola, TextBox t) {
+
+            while (cola.Count > 0)
+            {
+                Random r = new Random();
+                if (r.Next(3) > 1)
+                {
+                    cola.Enqueue(r.Next(3000));
+                }
+                else
+                {
+                    if (cola.Count>0) { 
+                    t.Invoke((MethodInvoker)delegate
+                    {
+                        t.Text += nombre+"-"+cola.Dequeue() + "\r\n";
+                    });
+                    }
+                }
+                Thread.Sleep(1000);
+            }
+        
+        }
     }
 }

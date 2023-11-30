@@ -1,3 +1,5 @@
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 namespace BotonTarea
 {
     public partial class Form1 : Form
@@ -71,6 +73,21 @@ namespace BotonTarea
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Alerta");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Queue<int> cola = new Queue<int>(new int[] { 1, 2, 3, 4, 5, 2, 3, 4, 5, 2, 3, 4, 5 });
+
+            List<Task> tareas = new List<Task>() {new Task(() => Utils.manejarPila("Tarea 1", cola, textRes)),
+            new Task(() => Utils.manejarPila("Tarea 2", cola, textRes)),
+            new Task(() => Utils.manejarPila("Tarea 3", cola, textRes)) };
+            foreach (var task in tareas)
+            {
+                task.Start();
+            }
+
+            
         }
     }
 }
