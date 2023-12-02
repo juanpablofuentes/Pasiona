@@ -9,8 +9,6 @@ namespace TareasDescargas
             List<string> urls = new List<string>
         {
             "https://files.icyflamestudio.com/200MB.zip",
-            "https://files.icyflamestudio.com/512MB.zip",
-            "https://files.icyflamestudio.com/1GB.bin",
             "https://files.icyflamestudio.com/100MB.bin"
                 };
 
@@ -41,7 +39,7 @@ namespace TareasDescargas
 
 
                 Console.WriteLine($"En proceso de descarga de {url}...");
-
+               
                 // Descargamos el archivo de forma asíncrona
                 await client.DownloadFileTaskAsync(new Uri(url), fileName);
 

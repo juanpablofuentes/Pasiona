@@ -14,7 +14,7 @@ namespace Juego_v3
             do
             {
                 Console.WriteLine( "Introduzca jugada");
-                jugada = Console.ReadLine();
+                jugada = Console.ReadLine()??"";
             } while (!validas.Contains(jugada));
             return jugada;
         }

@@ -71,8 +71,7 @@ namespace BotonTarea
                 if (operacion(numeros[i]))
                 {
                     filtrado[cont] = numeros[i];
-                    cont++;
-                    
+                    cont++; 
                 }
 
             }
