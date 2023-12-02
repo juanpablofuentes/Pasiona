@@ -35,6 +35,7 @@
             button3 = new Button();
             textRes = new TextBox();
             button4 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -101,11 +102,22 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // button5
+            // 
+            button5.Location = new Point(379, 183);
+            button5.Name = "button5";
+            button5.Size = new Size(100, 63);
+            button5.TabIndex = 7;
+            button5.Text = "Procesos paralelos";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(textRes);
             Controls.Add(button3);
@@ -128,5 +140,6 @@
         private Button button3;
         private TextBox textRes;
         private Button button4;
+        private Button button5;
     }
 }
