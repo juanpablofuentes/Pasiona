@@ -130,7 +130,7 @@ namespace BotonTarea
         }
         public static void procesarElementos(string nombre, List<Elemento> elementos)
         {
-            TextBox salida = elementos[0].txtMostrar;
+            TextBox? salida = elementos[0].txtMostrar;
             while (elementos.Count > 0)
             {
 
