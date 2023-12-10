@@ -87,7 +87,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploTask", "EjemploTask\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotonTarea", "BotonTarea\BotonTarea.csproj", "{283B1171-2A13-4890-BEDF-092E2D54538E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAOExample", "DAOExample\DAOExample.csproj", "{D37AE72D-FD9D-42E9-B1CE-4F42AC83339E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAOExample", "DAOExample\DAOExample.csproj", "{D37AE72D-FD9D-42E9-B1CE-4F42AC83339E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
