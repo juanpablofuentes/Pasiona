@@ -77,9 +77,11 @@ namespace BotonTarea
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Queue<int> cola = new Queue<int>(new int[] { 1, 2, 3, 4, 5, 2, 3, 4, 5, 2, 3, 4, 5 });
 
-            List<Task> tareas = new List<Task>() {new Task(() => Utils.manejarPila("Tarea 1", cola, textRes)),
+            Queue<int> cola = new Queue<int>(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
+
+            List<Task> tareas = new List<Task>() {
+            new Task(() => Utils.manejarPila("Tarea 1", cola, textRes)),
             new Task(() => Utils.manejarPila("Tarea 2", cola, textRes)),
             new Task(() => Utils.manejarPila("Tarea 3", cola, textRes)) };
             foreach (var task in tareas)
@@ -87,7 +89,7 @@ namespace BotonTarea
                 task.Start();
             }
 
-            
+
         }
     }
 }
