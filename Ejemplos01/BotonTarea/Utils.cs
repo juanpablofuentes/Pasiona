@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace BotonTarea
 {
@@ -42,6 +44,22 @@ namespace BotonTarea
             return ordenado;
         }
 
+        public static int[] ordenar(int[] numeros)
+        {
+            int[] ordenado = new int[numeros.Length];
+            numeros.CopyTo(ordenado, 0);
+            for (int i = 0; i < ordenado.Length; i++)
+            {
+                for (int j = 1; j < ordenado.Length; j++)
+                {
+                    if (ordenado[j - 1] > ordenado[j])
+                    {
+                        (ordenado[j - 1], ordenado[j]) = (ordenado[j], ordenado[j - 1]);
+                    }
+                }
+            }
+            return ordenado;
+        }
         public static int[] filtrar(int[] numeros, Predicate<int> operacion)
         {
             int[] filtrado = new int[numeros.Length];
@@ -82,6 +100,83 @@ namespace BotonTarea
                 Thread.Sleep(1000);
             }
         
+        }
+
+        public static void crearElementos(string nombre, List<Elemento> elementos)
+        {
+            TextBox salida = elementos[0].txtMostrar;
+
+            while (elementos.Count > 0)
+            {
+                
+                List<Elemento> lista = elementos.Where(x => x.Estado == 0).ToList();
+                foreach (Elemento elemento in lista)
+                {
+                    Thread.Sleep(1000);
+                    elemento.Elementos = Utils.crear(10000);
+                    elemento.Estado = 1;
+                    elemento.txtMostrar?.Invoke((MethodInvoker)delegate
+                    {
+                        elemento.txtMostrar.Text += nombre + " - "+elemento.Numero+" \r\n";
+                    });
+                }
+               
+            }
+            salida?.Invoke((MethodInvoker)delegate
+            {
+                salida.Text += nombre + " finalizada \r\n";
+            });
+
+        }
+        public static void procesarElementos(string nombre, List<Elemento> elementos)
+        {
+            TextBox? salida = elementos[0].txtMostrar;
+            while (elementos.Count > 0)
+            {
+
+                List<Elemento> lista = elementos.Where(x => x.Estado == 1).ToList();
+                foreach (Elemento elemento in lista)
+                {
+                    Thread.Sleep(1000);
+                    elemento.Elementos = Utils.ordenar(elemento.Elementos);
+                    elemento.Estado = 2;
+                    elemento.txtMostrar?.Invoke((MethodInvoker)delegate
+                    {
+                        elemento.txtMostrar.Text += nombre + " - " + elemento.Numero + " \r\n";
+                    });
+                }
+
+            }
+            salida?.Invoke((MethodInvoker)delegate
+            {
+                salida.Text +=  nombre + " finalizada \r\n";
+            });
+
+        }
+
+        public static void liberarElementos(string nombre, List<Elemento> elementos)
+        {
+            TextBox salida = elementos[0].txtMostrar;
+            while (elementos.Count > 0)
+            {
+
+                List<Elemento> lista = elementos.Where(x => x.Estado == 2).ToList();
+                foreach (Elemento elemento in lista)
+                {
+                    Thread.Sleep(2000);
+                    elemento.txtMostrar?.Invoke((MethodInvoker)delegate
+                    {
+                        elemento.txtMostrar.Text += nombre + " - " + elemento.Numero + " \r\n";
+                    });
+                    elementos.Remove(elemento);
+                }
+
+            }
+            salida?.Invoke((MethodInvoker)delegate
+            {
+                salida.Text += nombre + " finalizada \r\n";
+            });
+
         }
     }
 }
