@@ -9,7 +9,6 @@ namespace DAOExample
 {
     internal class ConnectionDB
     {
-        public static SqlConnection connection = new SqlConnection("Data Source=DESKTOP-B3NEDPH;Initial Catalog=pruebas;Integrated Security=True;TrustServerCertificate=True");
-
+        public static SqlConnection connection = new SqlConnection("Data Source=ARP\\SQLEXPRESS;Initial Catalog=prueba;Integrated Security=True;TrustServerCertificate=True");
     }
 }

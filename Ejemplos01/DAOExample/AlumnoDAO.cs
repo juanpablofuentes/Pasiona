@@ -10,7 +10,7 @@ namespace DAOExample
     internal class AlumnoDAO : IAlumnoDAO
     {
         public SqlConnection connection { get; set; }
-        private int limite = 10;
+        private int limite = 100;
         public AlumnoDAO(SqlConnection connection)
         {
             this.connection = connection;
@@ -145,8 +145,8 @@ namespace DAOExample
                 command.Parameters.AddWithValue("@nota", alumno.Nota);
                 command.Parameters.AddWithValue("@inscripcion", alumno.Inscripcion.ToString("yyyy-MM-dd"));
                 command.Parameters.AddWithValue("@email", alumno.Email);
-                int id = (int) command.ExecuteScalar();
-                
+                int id = (int)command.ExecuteScalar();
+
                 return id;
             }
             catch (Exception ex)
@@ -174,28 +174,12 @@ namespace DAOExample
             }
             finally { connection.Close(); }
         }
-    
+
 
         public int deleteAlumno(Alumno alumno)
         {
-        try
-        {
-            var sql = "delete from alumno where id=@id";
-            connection.Open();
-            SqlCommand command = new SqlCommand(sql, connection);
-            command.Parameters.AddWithValue("@id", alumno.Id);
-            return command.ExecuteNonQuery();
+            return deleteAlumno(alumno.Id);
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-            return 0;
-        }
-        finally { connection.Close(); }
-    }
-
-
-
 
         public int updateAlumno(Alumno alumno)
         {
