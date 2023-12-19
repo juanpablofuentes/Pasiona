@@ -36,7 +36,14 @@
             contextMenuStrip1 = new ContextMenuStrip(components);
             aaaaaToolStripMenuItem = new ToolStripMenuItem();
             bbbbbToolStripMenuItem = new ToolStripMenuItem();
+            dataGridView1 = new DataGridView();
+            idDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            tituloDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            creditosDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            cursoBindingSource = new BindingSource(components);
             contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cursoBindingSource).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -98,11 +105,46 @@
             bbbbbToolStripMenuItem.Size = new Size(109, 22);
             bbbbbToolStripMenuItem.Text = "bbbbb";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { idDataGridViewTextBoxColumn, tituloDataGridViewTextBoxColumn, creditosDataGridViewTextBoxColumn });
+            dataGridView1.DataSource = cursoBindingSource;
+            dataGridView1.Location = new Point(43, 24);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(246, 215);
+            dataGridView1.TabIndex = 3;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            idDataGridViewTextBoxColumn.HeaderText = "Id";
+            idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // tituloDataGridViewTextBoxColumn
+            // 
+            tituloDataGridViewTextBoxColumn.DataPropertyName = "Titulo";
+            tituloDataGridViewTextBoxColumn.HeaderText = "Titulo";
+            tituloDataGridViewTextBoxColumn.Name = "tituloDataGridViewTextBoxColumn";
+            // 
+            // creditosDataGridViewTextBoxColumn
+            // 
+            creditosDataGridViewTextBoxColumn.DataPropertyName = "Creditos";
+            creditosDataGridViewTextBoxColumn.HeaderText = "Creditos";
+            creditosDataGridViewTextBoxColumn.Name = "creditosDataGridViewTextBoxColumn";
+            // 
+            // cursoBindingSource
+            // 
+            cursoBindingSource.DataSource = typeof(TestMVC.Models.Curso);
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dataGridView1);
             Controls.Add(textBox1);
             Controls.Add(linkLabel1);
             Controls.Add(button1);
@@ -111,6 +153,8 @@
             Text = "Form1";
             MouseClick += Form1_MouseClick;
             contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cursoBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -123,5 +167,10 @@
         private ContextMenuStrip contextMenuStrip1;
         private ToolStripMenuItem aaaaaToolStripMenuItem;
         private ToolStripMenuItem bbbbbToolStripMenuItem;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn tituloDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn creditosDataGridViewTextBoxColumn;
+        private BindingSource cursoBindingSource;
     }
 }

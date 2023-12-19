@@ -95,11 +95,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumerosComplejosTest", "Num
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ecuaciones", "Ecuaciones\Ecuaciones.csproj", "{CAEE3F2D-62D0-438F-B369-B0D656F89473}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcuacionesTest", "EcuacionesTest\EcuacionesTest.csproj", "{D105A001-2C3B-410D-B7B2-9306B120AC71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcuacionesTest", "EcuacionesTest\EcuacionesTest.csproj", "{D105A001-2C3B-410D-B7B2-9306B120AC71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parseadores", "Parseadores\Parseadores.csproj", "{F8BEFE84-59A9-4F1B-9843-B2DAC10B6DF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parseadores", "Parseadores\Parseadores.csproj", "{F8BEFE84-59A9-4F1B-9843-B2DAC10B6DF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailParserTest", "EmailParserTest\EmailParserTest.csproj", "{D78A3FF2-9CA5-4F83-8601-E05928BE0074}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailParserTest", "EmailParserTest\EmailParserTest.csproj", "{D78A3FF2-9CA5-4F83-8601-E05928BE0074}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsDatos", "FormsDatos\FormsDatos.csproj", "{074BEB05-52AC-4674-92CF-8124E6460F4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -303,6 +305,10 @@ Global
 		{D78A3FF2-9CA5-4F83-8601-E05928BE0074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D78A3FF2-9CA5-4F83-8601-E05928BE0074}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D78A3FF2-9CA5-4F83-8601-E05928BE0074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074BEB05-52AC-4674-92CF-8124E6460F4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074BEB05-52AC-4674-92CF-8124E6460F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074BEB05-52AC-4674-92CF-8124E6460F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074BEB05-52AC-4674-92CF-8124E6460F4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

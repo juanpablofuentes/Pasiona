@@ -11,7 +11,7 @@ namespace EcuacionesPruebas
     public class Pruebas
     {
         [Fact]
-        public void TodosCero()
+        public void TodoCeroNull()
         {
             // Arrange
 
@@ -25,14 +25,12 @@ namespace EcuacionesPruebas
 
 
             //Assert
-            Assert.Equal(x1, x2);
-
             Assert.Null(x1);
             Assert.Null(x2);
         }
 
         [Fact]
-        public void XCero()
+        public void LasxCeroNull()
         {
             // Arrange
 
@@ -46,12 +44,61 @@ namespace EcuacionesPruebas
 
             
             //Assert
-            Assert.Equal(x1, x2);
-
             Assert.Null(x1);
             Assert.Null(x2);
         }
+        [Fact]
+        public void DiscriminanteNegativo()
+        {
+            // Arrange
+
+            double a = 2;
+            double b = 1;
+            double c = 1;
+
+            // Act
+
+            (double? x1, double? x2) = Solver.segundoGrado(a, b, c);
 
 
+            //Assert
+            Assert.Null(x1);
+            Assert.Null(x2);
+        }
+        public void UnaSolucion()
+        {
+            // Arrange
+
+            double a = 1;
+            double b = 2;
+            double c = 1;
+
+            // Act
+
+            (double? x1, double? x2) = Solver.segundoGrado(a, b, c);
+
+
+            //Assert
+            Assert.Equal(x1,-1);
+            Assert.Null(x2);
+        }
+        public void DosSoluciones()
+        {
+            // Arrange
+
+            double a = 1;
+            double b = 2;
+            double c = -15;
+
+            // Act
+
+            (double? x1, double? x2) = Solver.segundoGrado(a, b, c);
+
+
+            //Assert
+            Assert.Equal(x1, 3);
+            Assert.Equal(x1, -5);
+
+        }
     }
 }
