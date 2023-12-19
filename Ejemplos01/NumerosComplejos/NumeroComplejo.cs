@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NumerosComplejos
 {
-    internal class NumeroComplejo:IComparable<NumeroComplejo>
+    public class NumeroComplejo:IComparable<NumeroComplejo>
     {
         public double ParteReal { get; set; }
         public double ParteImaginaria { get; set; }

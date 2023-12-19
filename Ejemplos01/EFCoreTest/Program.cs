@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            using (var context = new PruebaContext())
+            {
+                var nuevo = new Profesor { NombreCompleto = "Juan Pérez", Email = "juan@example.com" };
+                context.Profesores.Add(nuevo);
+                context.SaveChanges();
+            }
         }
     }
 }
