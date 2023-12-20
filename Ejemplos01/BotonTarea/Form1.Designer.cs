@@ -41,9 +41,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(215, 38);
+            button1.Location = new Point(246, 51);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(86, 31);
             button1.TabIndex = 0;
             button1.Text = "Empezar";
             button1.UseVisualStyleBackColor = true;
@@ -51,25 +52,28 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(57, 80);
+            textBox1.Location = new Point(65, 107);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(233, 316);
+            textBox1.Size = new Size(266, 420);
             textBox1.TabIndex = 1;
             // 
             // tamArray
             // 
-            tamArray.Location = new Point(57, 39);
+            tamArray.Location = new Point(65, 52);
+            tamArray.Margin = new Padding(3, 4, 3, 4);
             tamArray.Name = "tamArray";
-            tamArray.Size = new Size(100, 23);
+            tamArray.Size = new Size(114, 27);
             tamArray.TabIndex = 2;
             tamArray.Text = "50000";
             // 
             // button2
             // 
-            button2.Location = new Point(379, 39);
+            button2.Location = new Point(433, 52);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(100, 23);
+            button2.Size = new Size(114, 31);
             button2.TabIndex = 3;
             button2.Text = "Añade texto";
             button2.UseVisualStyleBackColor = true;
@@ -77,9 +81,10 @@
             // 
             // button3
             // 
-            button3.Location = new Point(379, 80);
+            button3.Location = new Point(433, 107);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(100, 23);
+            button3.Size = new Size(114, 31);
             button3.TabIndex = 4;
             button3.Text = "Mensaje";
             button3.UseVisualStyleBackColor = true;
@@ -87,17 +92,19 @@
             // 
             // textRes
             // 
-            textRes.Location = new Point(583, 61);
+            textRes.Location = new Point(635, 54);
+            textRes.Margin = new Padding(3, 4, 3, 4);
             textRes.Multiline = true;
             textRes.Name = "textRes";
-            textRes.Size = new Size(100, 335);
+            textRes.Size = new Size(254, 620);
             textRes.TabIndex = 5;
             // 
             // button4
             // 
-            button4.Location = new Point(379, 117);
+            button4.Location = new Point(433, 156);
+            button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
-            button4.Size = new Size(100, 35);
+            button4.Size = new Size(114, 47);
             button4.TabIndex = 6;
             button4.Text = "Encolar";
             button4.UseVisualStyleBackColor = true;
@@ -105,9 +112,10 @@
             // 
             // button5
             // 
-            button5.Location = new Point(379, 183);
+            button5.Location = new Point(433, 244);
+            button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
-            button5.Size = new Size(100, 63);
+            button5.Size = new Size(114, 84);
             button5.TabIndex = 7;
             button5.Text = "Procesos paralelos";
             button5.UseVisualStyleBackColor = true;
@@ -115,9 +123,10 @@
             // 
             // button6
             // 
-            button6.Location = new Point(377, 265);
+            button6.Location = new Point(431, 353);
+            button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
-            button6.Size = new Size(104, 59);
+            button6.Size = new Size(119, 79);
             button6.TabIndex = 8;
             button6.Text = "Añadir elemento";
             button6.UseVisualStyleBackColor = true;
@@ -125,9 +134,9 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1074, 705);
             Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
@@ -137,6 +146,7 @@
             Controls.Add(tamArray);
             Controls.Add(textBox1);
             Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);

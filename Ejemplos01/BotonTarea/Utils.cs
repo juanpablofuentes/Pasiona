@@ -108,7 +108,7 @@ namespace BotonTarea
 
             while (elementos.Count > 0)
             {
-                
+                try { 
                 List<Elemento> lista = elementos.Where(x => x.Estado == 0).ToList();
                 foreach (Elemento elemento in lista)
                 {
@@ -120,7 +120,9 @@ namespace BotonTarea
                         elemento.txtMostrar.Text += nombre + " - "+elemento.Numero+" \r\n";
                     });
                 }
-               
+                }catch(Exception ex) { Console.WriteLine(ex.ToString()); }
+
+
             }
             salida?.Invoke((MethodInvoker)delegate
             {
@@ -168,6 +170,7 @@ namespace BotonTarea
                     {
                         elemento.txtMostrar.Text += nombre + " - " + elemento.Numero + " \r\n";
                     });
+                    // TODO: pasar a Estado 3
                     elementos.Remove(elemento);
                 }
 

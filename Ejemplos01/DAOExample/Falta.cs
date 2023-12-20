@@ -22,7 +22,6 @@ namespace DAOExample
             IdAlumno = idalumno;
             AlumnoDAO adao=new AlumnoDAO(ConnectionDB.connection);
             Alumno = adao.getAlumno(idalumno);
-
         }
         public override string ToString()
         {
