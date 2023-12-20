@@ -15,6 +15,11 @@ namespace Ecuaciones
                 return (null,null);
             }
 
+            double discriminante = b * b - 4 * a * c;
+            if (discriminante<0)
+            {
+                return (null, null);
+            }
             return (0, 0);
 
         }

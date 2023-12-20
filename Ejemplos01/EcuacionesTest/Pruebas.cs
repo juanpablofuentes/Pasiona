@@ -65,6 +65,7 @@ namespace EcuacionesPruebas
             Assert.Null(x1);
             Assert.Null(x2);
         }
+        [Fact]
         public void UnaSolucion()
         {
             // Arrange
@@ -82,6 +83,7 @@ namespace EcuacionesPruebas
             Assert.Equal(x1,-1);
             Assert.Null(x2);
         }
+        [Fact]
         public void DosSoluciones()
         {
             // Arrange
