@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WpfApp1
 {
-    class Contexto:DbContext
+    public class Contexto:DbContext
     {
         public DbSet<Alumno> Alumnos { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
