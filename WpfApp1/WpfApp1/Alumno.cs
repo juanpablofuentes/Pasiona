@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WpfApp1
 {
-    class Alumno
+    public class Alumno
     {
         [Key]
         public int Id { get; set; }

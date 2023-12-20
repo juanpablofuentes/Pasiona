@@ -41,6 +41,7 @@
             tituloDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             creditosDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             cursoBindingSource = new BindingSource(components);
+            radioButton1 = new RadioButton();
             contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)cursoBindingSource).BeginInit();
@@ -139,11 +140,23 @@
             // 
             cursoBindingSource.DataSource = typeof(TestMVC.Models.Curso);
             // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(553, 152);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(94, 19);
+            radioButton1.TabIndex = 4;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "radioButton1";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(radioButton1);
             Controls.Add(dataGridView1);
             Controls.Add(textBox1);
             Controls.Add(linkLabel1);
@@ -172,5 +185,6 @@
         private DataGridViewTextBoxColumn tituloDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn creditosDataGridViewTextBoxColumn;
         private BindingSource cursoBindingSource;
+        private RadioButton radioButton1;
     }
 }
