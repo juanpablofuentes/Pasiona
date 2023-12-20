@@ -78,6 +78,8 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(221, 23);
             textBox1.TabIndex = 3;
+            textBox1.KeyDown += textBox1_KeyDown;
+            textBox1.KeyPress += textBox1_KeyPress;
             // 
             // button1
             // 
@@ -192,6 +194,7 @@
             Controls.Add(lbInfo);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             MouseClick += Form1_MouseClick;
             MouseDown += Form1_MouseDown;
             MouseMove += Form1_MouseMove;

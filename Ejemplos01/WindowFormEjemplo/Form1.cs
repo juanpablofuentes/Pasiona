@@ -39,5 +39,23 @@ namespace WindowFormEjemplo
             var r = (RadioButton)sender;
             MessageBox.Show(r.Name);
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //e.Cancel = true;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 'a')
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
