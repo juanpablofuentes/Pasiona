@@ -41,6 +41,10 @@
             panel1 = new Panel();
             radioButton4 = new RadioButton();
             radioButton3 = new RadioButton();
+            dateTimePicker1 = new DateTimePicker();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
             groupBox1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -102,7 +106,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(666, 80);
+            button2.Location = new Point(661, 77);
             button2.Name = "button2";
             button2.Size = new Size(80, 25);
             button2.TabIndex = 6;
@@ -178,11 +182,52 @@
             radioButton3.UseVisualStyleBackColor = true;
             radioButton3.CheckedChanged += radioButton1_CheckedChanged;
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(411, 371);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.TabIndex = 9;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(645, 373);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 10;
+            button3.Text = "Hoy";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(729, 374);
+            button4.Name = "button4";
+            button4.Size = new Size(25, 23);
+            button4.TabIndex = 11;
+            button4.Text = "-";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(760, 374);
+            button5.Name = "button5";
+            button5.Size = new Size(25, 23);
+            button5.TabIndex = 12;
+            button5.Text = "+";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(dateTimePicker1);
             Controls.Add(panel1);
             Controls.Add(groupBox1);
             Controls.Add(button2);
@@ -222,5 +267,9 @@
         private Panel panel1;
         private RadioButton radioButton4;
         private RadioButton radioButton3;
+        private DateTimePicker dateTimePicker1;
+        private Button button3;
+        private Button button4;
+        private Button button5;
     }
 }

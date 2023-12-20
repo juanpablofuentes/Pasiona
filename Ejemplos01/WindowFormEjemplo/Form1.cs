@@ -47,7 +47,7 @@ namespace WindowFormEjemplo
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
-           
+
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -56,6 +56,24 @@ namespace WindowFormEjemplo
             {
                 e.Handled = true;
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dateTimePicker1.Value = DateTime.Now;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var fecha = dateTimePicker1.Value;
+            dateTimePicker1.Value = fecha.AddDays(1); ;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var fecha = dateTimePicker1.Value;
+            
+            dateTimePicker1.Value = fecha.AddDays(-1); ;
         }
     }
 }
