@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfAppEjemplos.Eventos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-Namespace:WpfAppEjemplos"
+        mc:Ignorable="d"
+        Title="Eventos" Height="450" Width="800"
+        >
+
+    <Grid ButtonBase.Click="Window_Click" PreviewMouseDown="Grid_MouseDown" >
+        <StackPanel ButtonBase.Click="StackPanel_Click" Margin="20">
+            <StackPanel Margin="10">
+                <TextBlock FontSize="18" Margin="5" Name="TextBlock1" Text="This is a first TextBlock">
+                </TextBlock>
+                <TextBlock FontSize="18" Margin="5" Name="TextBlock2" Text="This is a second TextBlock">
+                </TextBlock>
+                <TextBlock FontSize="18" Margin="5" Name="TextBlock3" Text="This is a third TextBlock">
+                        </TextBlock>
+                   
+            </StackPanel>
+            <Button Click="Button_Click" Content="Click Me!!" Margin="10" Width="80"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

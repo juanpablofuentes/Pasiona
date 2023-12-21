@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bullet_icon_177745.png" />
+    <None Remove="firma.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bullet_icon_177745.png" />
+    <Resource Include="firma.gif" />
+  </ItemGroup>
+
+</Project>

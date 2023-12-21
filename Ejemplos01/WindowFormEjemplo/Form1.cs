@@ -72,8 +72,13 @@ namespace WindowFormEjemplo
         private void button4_Click(object sender, EventArgs e)
         {
             var fecha = dateTimePicker1.Value;
-            
+
             dateTimePicker1.Value = fecha.AddDays(-1); ;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
