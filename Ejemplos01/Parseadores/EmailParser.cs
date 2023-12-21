@@ -27,9 +27,14 @@ namespace Parseadores
         public static string GetDomain(string email)
         {
             int indexOfAt = email.IndexOf('@');
-
+          
             if (indexOfAt != -1)
             {
+                int another = email.IndexOf("@", indexOfAt+1);
+                if (another != -1)
+                {
+                    return string.Empty;
+                }
                 // Devuelve la parte del dominio después de la arroba
                 return email.Substring(indexOfAt + 1);
             }

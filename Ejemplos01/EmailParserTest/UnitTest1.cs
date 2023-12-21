@@ -25,6 +25,7 @@ namespace EmailParserTest
                 Add("test@test.com", "test.com");
                 Add("milan@milanjovanovic.tech", "milanjovanovic.tech");
                 Add("pepe", "");
+                Add("pepe@pepe@com", "");
             }
         };
     }
