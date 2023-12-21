@@ -31,13 +31,20 @@ namespace WindowFormEjemplo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(comboBox1.SelectedIndex + " - " + comboBox1.SelectedItem.ToString());
+            if (comboBox1.SelectedIndex > 0)
+            {
+                MessageBox.Show(comboBox1.SelectedIndex + " - " + comboBox1.SelectedItem.ToString());
+            }
+            else
+            {
+                MessageBox.Show(comboBox1.Text);
+            }
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             var r = (RadioButton)sender;
-            MessageBox.Show(r.Name);
+            MessageBox.Show(r.Name + " - " + r.Checked.ToString());
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -72,8 +79,13 @@ namespace WindowFormEjemplo
         private void button4_Click(object sender, EventArgs e)
         {
             var fecha = dateTimePicker1.Value;
-            
+
             dateTimePicker1.Value = fecha.AddDays(-1); ;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            comboBox1.Items.RemoveAt(0);
         }
     }
 }

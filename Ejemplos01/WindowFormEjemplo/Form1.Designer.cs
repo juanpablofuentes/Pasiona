@@ -45,6 +45,7 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            button6 = new Button();
             groupBox1.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -52,44 +53,46 @@
             // lbInfo
             // 
             lbInfo.AutoSize = true;
-            lbInfo.Location = new Point(30, 20);
+            lbInfo.Location = new Point(34, 27);
             lbInfo.Name = "lbInfo";
-            lbInfo.Size = new Size(72, 15);
+            lbInfo.Size = new Size(89, 20);
             lbInfo.TabIndex = 0;
             lbInfo.Text = "Información";
             // 
             // lbCapture
             // 
             lbCapture.AutoSize = true;
-            lbCapture.Location = new Point(30, 52);
+            lbCapture.Location = new Point(34, 69);
             lbCapture.Name = "lbCapture";
-            lbCapture.Size = new Size(72, 15);
+            lbCapture.Size = new Size(89, 20);
             lbCapture.TabIndex = 1;
             lbCapture.Text = "Información";
             // 
             // lbMove
             // 
             lbMove.AutoSize = true;
-            lbMove.Location = new Point(30, 87);
+            lbMove.Location = new Point(34, 116);
             lbMove.Name = "lbMove";
-            lbMove.Size = new Size(72, 15);
+            lbMove.Size = new Size(89, 20);
             lbMove.TabIndex = 2;
             lbMove.Text = "Información";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(416, 41);
+            textBox1.Location = new Point(475, 55);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(221, 23);
+            textBox1.Size = new Size(252, 27);
             textBox1.TabIndex = 3;
             textBox1.KeyDown += textBox1_KeyDown;
             textBox1.KeyPress += textBox1_KeyPress;
             // 
             // button1
             // 
-            button1.Location = new Point(662, 38);
+            button1.Location = new Point(757, 51);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(79, 26);
+            button1.Size = new Size(90, 35);
             button1.TabIndex = 4;
             button1.Text = "Añadir";
             button1.UseVisualStyleBackColor = true;
@@ -99,16 +102,18 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "C#", "Java", "JS" });
-            comboBox1.Location = new Point(418, 83);
+            comboBox1.Location = new Point(478, 111);
+            comboBox1.Margin = new Padding(3, 4, 3, 4);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(218, 23);
+            comboBox1.Size = new Size(249, 28);
             comboBox1.TabIndex = 5;
             // 
             // button2
             // 
-            button2.Location = new Point(661, 77);
+            button2.Location = new Point(755, 103);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(80, 25);
+            button2.Size = new Size(91, 33);
             button2.TabIndex = 6;
             button2.Text = "Obtener";
             button2.UseVisualStyleBackColor = true;
@@ -118,19 +123,22 @@
             // 
             groupBox1.Controls.Add(radioButton2);
             groupBox1.Controls.Add(radioButton1);
-            groupBox1.Location = new Point(419, 143);
+            groupBox1.Location = new Point(479, 191);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(215, 85);
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(246, 113);
             groupBox1.TabIndex = 7;
             groupBox1.TabStop = false;
-            groupBox1.Text = "OPciones";
+            groupBox1.Text = "Opciones";
             // 
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(21, 47);
+            radioButton2.Location = new Point(24, 63);
+            radioButton2.Margin = new Padding(3, 4, 3, 4);
             radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(94, 19);
+            radioButton2.Size = new Size(117, 24);
             radioButton2.TabIndex = 1;
             radioButton2.TabStop = true;
             radioButton2.Text = "radioButton2";
@@ -140,9 +148,10 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(21, 22);
+            radioButton1.Location = new Point(24, 29);
+            radioButton1.Margin = new Padding(3, 4, 3, 4);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(94, 19);
+            radioButton1.Size = new Size(117, 24);
             radioButton1.TabIndex = 0;
             radioButton1.TabStop = true;
             radioButton1.Text = "radioButton1";
@@ -153,17 +162,19 @@
             // 
             panel1.Controls.Add(radioButton4);
             panel1.Controls.Add(radioButton3);
-            panel1.Location = new Point(414, 250);
+            panel1.Location = new Point(473, 333);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(224, 102);
+            panel1.Size = new Size(256, 136);
             panel1.TabIndex = 8;
             // 
             // radioButton4
             // 
             radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(23, 58);
+            radioButton4.Location = new Point(26, 77);
+            radioButton4.Margin = new Padding(3, 4, 3, 4);
             radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(94, 19);
+            radioButton4.Size = new Size(117, 24);
             radioButton4.TabIndex = 1;
             radioButton4.TabStop = true;
             radioButton4.Text = "radioButton4";
@@ -173,9 +184,10 @@
             // radioButton3
             // 
             radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(22, 20);
+            radioButton3.Location = new Point(25, 27);
+            radioButton3.Margin = new Padding(3, 4, 3, 4);
             radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(94, 19);
+            radioButton3.Size = new Size(117, 24);
             radioButton3.TabIndex = 0;
             radioButton3.TabStop = true;
             radioButton3.Text = "radioButton3";
@@ -184,16 +196,18 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(411, 371);
+            dateTimePicker1.Location = new Point(470, 495);
+            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.Size = new Size(228, 27);
             dateTimePicker1.TabIndex = 9;
             // 
             // button3
             // 
-            button3.Location = new Point(645, 373);
+            button3.Location = new Point(737, 497);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(75, 23);
+            button3.Size = new Size(86, 31);
             button3.TabIndex = 10;
             button3.Text = "Hoy";
             button3.UseVisualStyleBackColor = true;
@@ -201,9 +215,10 @@
             // 
             // button4
             // 
-            button4.Location = new Point(729, 374);
+            button4.Location = new Point(833, 499);
+            button4.Margin = new Padding(3, 4, 3, 4);
             button4.Name = "button4";
-            button4.Size = new Size(25, 23);
+            button4.Size = new Size(29, 31);
             button4.TabIndex = 11;
             button4.Text = "-";
             button4.UseVisualStyleBackColor = true;
@@ -211,19 +226,32 @@
             // 
             // button5
             // 
-            button5.Location = new Point(760, 374);
+            button5.Location = new Point(869, 499);
+            button5.Margin = new Padding(3, 4, 3, 4);
             button5.Name = "button5";
-            button5.Size = new Size(25, 23);
+            button5.Size = new Size(29, 31);
             button5.TabIndex = 12;
             button5.Text = "+";
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
+            // button6
+            // 
+            button6.Location = new Point(853, 51);
+            button6.Margin = new Padding(3, 4, 3, 4);
+            button6.Name = "button6";
+            button6.Size = new Size(90, 35);
+            button6.TabIndex = 13;
+            button6.Text = "Borrar";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(997, 600);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -237,6 +265,7 @@
             Controls.Add(lbMove);
             Controls.Add(lbCapture);
             Controls.Add(lbInfo);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             FormClosing += Form1_FormClosing;
@@ -271,5 +300,6 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private Button button6;
     }
 }
