@@ -19,6 +19,7 @@ namespace WpfAppEjemplos
     /// </summary>
     public partial class Eventos : Window
     {
+        Button button;
         public Eventos()
         {
             InitializeComponent();
@@ -26,6 +27,7 @@ namespace WpfAppEjemplos
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             TextBlock1.Text = "Button is Clicked";
+            button=(Button)sender;
         }
         private void StackPanel_Click(object sender, RoutedEventArgs e)
         {
@@ -33,12 +35,14 @@ namespace WpfAppEjemplos
         }
         private void Window_Click(object sender, RoutedEventArgs e)
         {
-            TextBlock3.Text = "Click event of Window";
+          
+            TextBlock3.Text = "Click event of Window "+button.Content;
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            TextBlock1.Text = $"Grid {e.ChangedButton}";
+            TextBlock1.Text = $"Grid {e.ChangedButton} posicion {e.GetPosition(this)}";
+            
         }
 
     

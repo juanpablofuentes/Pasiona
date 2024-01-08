@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid PreviewMouseDown="Grid_PreviewMouseDown" Background="#00000000">
-        <Grid VerticalAlignment="Top" HorizontalAlignment="Left" ShowGridLines="True" Width="250" Height="100">
+        <Grid VerticalAlignment="Bottom" HorizontalAlignment="Left" ShowGridLines="True" Width="354" Height="120">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
+                <ColumnDefinition Width="119*" />
+                <ColumnDefinition Width="117*" />
+                <ColumnDefinition Width="118*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition />
@@ -28,8 +28,17 @@
             <TextBlock Grid.Row="2" Grid.Column="1">100000</TextBlock>
             <TextBlock Grid.Row="2" Grid.Column="2">150000</TextBlock>
             <TextBlock FontSize="16" FontWeight="Bold" Grid.ColumnSpan="3" Grid.Row="3">Total Units: 300000</TextBlock>
+            <Label Grid.Column="2" Content="Label" HorizontalAlignment="Left" Margin="45,10,0,0" Grid.Row="2" VerticalAlignment="Top"/>
         </Grid>
-        <Button x:Name="Boton1" Width="100" Height="100" Click="Button_Click">Ventana</Button>
+        <Button x:Name="Boton1" Width="100" Height="100" Click="Button_Click" Margin="235,175,465,159">Ventana</Button>
         <Button x:Name="button" Content="Controles" HorizontalAlignment="Left" Height="76" Margin="491,167,0,0" VerticalAlignment="Top" Width="127" Click="button_Click_1"/>
+        <StackPanel Orientation="Vertical">
+            <Button HorizontalAlignment="Left">Button 1</Button>
+            <Button HorizontalAlignment="Center">Button 2</Button>
+            <Button HorizontalAlignment="Right">Button 3</Button>
+            <Button HorizontalAlignment="Right">Button 4</Button>
+            <Button HorizontalAlignment="Center">Button 5</Button>
+            <Button HorizontalAlignment="Left">Button 6</Button>
+        </StackPanel>
     </Grid>
 </Window>

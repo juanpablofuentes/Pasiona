@@ -7,17 +7,17 @@
         mc:Ignorable="d"
         Title="Controles" Height="450" Width="800">
     <Grid>
-        <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="256,73,0,0" VerticalAlignment="Top" GroupName="grupo1"/>
+        <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="256,73,0,0" VerticalAlignment="Top" GroupName="grupo1" Checked="radioButton_Checked"/>
         <RadioButton x:Name="radioButton1" Content="RadioButton" HorizontalAlignment="Left" Margin="256,115,0,0" VerticalAlignment="Top" GroupName="grupo1"/>
         <RadioButton x:Name="radioButton2" Content="RadioButton" HorizontalAlignment="Left" Margin="420,80,0,0" VerticalAlignment="Top" GroupName="grupo2"/>
         <RadioButton x:Name="radioButton3" Content="RadioButton" HorizontalAlignment="Left" Margin="420,122,0,0" VerticalAlignment="Top" GroupName="grupo2"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="256,204,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem>ComboBox Item #1</ComboBoxItem>
             <ComboBoxItem/>
-            <ComboBoxItem/>
-            <Button/>
-            <ComboBoxItem IsSelected="True">ComboBox Item #2</ComboBoxItem>
-            <ComboBoxItem Background="#FFE23737">ComboBox Item #3</ComboBoxItem>
+            <Separator/>
+            <ComboBoxItem>ComboBox Item #3</ComboBoxItem>
+            <CheckBox Content="Seleccionar"/>
+            <ComboBoxItem IsSelected="True" FontSize="22" OpacityMask="#FF5BFF32" Content="ComboBox Item #2"/>
         </ComboBox>
         <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Height="23" Margin="256,261,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem>
@@ -51,5 +51,7 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
+        <Label Content="Label" HorizontalAlignment="Left" Height="42" Margin="486,184,0,0" VerticalAlignment="Top" Width="186"/>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="486,249,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="186"/>
     </Grid>
 </Window>

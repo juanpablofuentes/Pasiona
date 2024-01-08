@@ -87,5 +87,10 @@ namespace WindowFormEjemplo
         {
             comboBox1.Items.RemoveAt(0);
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            comboBox1.Items.RemoveAt(0);
+        }
     }
 }

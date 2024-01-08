@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace WpfAppEjemplos
 {
     /// <summary>
-    /// Lógica de interacción para Controles.xaml
+    /// Lógica de interacción para GridStack.xaml
     /// </summary>
-    public partial class Controles : Window
+    public partial class GridStack : Window
     {
-        public Controles()
+        public GridStack()
         {
             InitializeComponent();
-            cmbColors.ItemsSource = typeof(Colors).GetProperties();
-        }
-
-        private void radioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            var c = (RadioButton)sender;
-            MessageBox.Show(c.IsChecked.ToString());
         }
     }
 }

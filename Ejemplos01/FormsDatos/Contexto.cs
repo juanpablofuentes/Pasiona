@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FormsDatos
 {
-    internal class Contexto : DbContext
+    public class Contexto : DbContext
     {
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }

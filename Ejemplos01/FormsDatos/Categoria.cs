@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FormsDatos
 {
-    internal class Categoria
+    public class Categoria
     {
         public int Id { get; set; }
 
