@@ -1,9 +1,12 @@
-﻿string[] cadenas = { "hola", "que", "tal","amigo" };
+﻿
+
+string[] cadenas = { "hola", "que", "tal","amigo" };
 
 var cads= new[]  { "hola", "que", "tal" };
 
 //Error en compilación, no hay un tipo adecuado
 //var error = new[] { "hola", 7, "tal" };
+String cad;
 
 object[] variado = { "hola", 4, 5.5, new DateTime(2022,6,4) };
 

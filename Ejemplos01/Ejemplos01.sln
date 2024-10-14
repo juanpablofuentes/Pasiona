@@ -127,9 +127,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDataGrid", "WpfDataGrid\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDataBinding", "WpfDataBinding\WpfDataBinding.csproj", "{8D0CC525-90D2-4798-B6A5-5B628D82766A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashSetComparator", "HashSetComparator\HashSetComparator.csproj", "{8FD963E0-72DE-4A2C-BDFC-69A06C010218}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashSetComparator", "HashSetComparator\HashSetComparator.csproj", "{8FD963E0-72DE-4A2C-BDFC-69A06C010218}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioEvaluacion", "EjercicioEvaluacion\EjercicioEvaluacion.csproj", "{AE8FD2A0-7F1A-4BA0-AA37-FE0C9E2EC135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjercicioEvaluacion", "EjercicioEvaluacion\EjercicioEvaluacion.csproj", "{AE8FD2A0-7F1A-4BA0-AA37-FE0C9E2EC135}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemplosSimplesC", "EjemplosSimplesC\EjemplosSimplesC.csproj", "{0318A1B7-826C-4E60-9198-F5BED35B1544}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -393,6 +395,10 @@ Global
 		{AE8FD2A0-7F1A-4BA0-AA37-FE0C9E2EC135}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE8FD2A0-7F1A-4BA0-AA37-FE0C9E2EC135}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE8FD2A0-7F1A-4BA0-AA37-FE0C9E2EC135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0318A1B7-826C-4E60-9198-F5BED35B1544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0318A1B7-826C-4E60-9198-F5BED35B1544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0318A1B7-826C-4E60-9198-F5BED35B1544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0318A1B7-826C-4E60-9198-F5BED35B1544}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

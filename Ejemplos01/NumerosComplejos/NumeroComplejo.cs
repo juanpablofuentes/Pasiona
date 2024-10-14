@@ -51,7 +51,6 @@ namespace NumerosComplejos
             return new NumeroComplejo(real, imaginaria);
         }
 
-       
 
         // Sobrecarga de operadores de comparación
         public static bool operator <(NumeroComplejo a, NumeroComplejo b)

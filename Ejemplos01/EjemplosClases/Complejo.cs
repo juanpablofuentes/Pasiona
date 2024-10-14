@@ -10,7 +10,6 @@ namespace EjemplosClases
     {
         public float real { get; set; }
         public float imaginaria { get; set; }
-
         public float absoluto { get { return (float)Math.Sqrt(real*real+imaginaria*imaginaria); } }
         public override string ToString()=>$"{real} + {imaginaria}i";
         
