@@ -11,112 +11,157 @@ namespace LINQMetodos
         static void Main(string[] args)
         {
             List<Alumno> listaAlumnos = new List<Alumno>()
+    {
+        new Alumno("Eva",20,6.0),
+        new Alumno("Ana",22,7.0),
+        new Alumno("Rosa",22,4.0),
+        new Alumno("Ot",20,3.0),
+        new Alumno("Iu",30,6.8),
+        new Alumno("Pep",32,5.9),
+        new Alumno("Laia",30,2.3),
+        new Alumno("Quim",32,1.7),
+    };
+            //  Seleccionamos todos los alumnos (devuelve un IEnumerable de  tipo Alumno
+            var res = from alumno in listaAlumnos
+                      select alumno;
+            foreach (Alumno al in res)
             {
-                new Alumno("Eva",20,6.0),
-                new Alumno("Ana",22,7.0),
-                new Alumno("Rosa",22,4.0),
-                new Alumno("Ot",20,3.0),
-                new Alumno("Iu",30,6.8),
-                new Alumno("Pep",32,5.9),
-                new Alumno("Laia",30,2.3),
-                new Alumno("Quim",32,1.7),
-            };
-
-            //Filtrar(Where):   Seleccionar alumnos mayores de 25 años.
-
-            var mayoresDe25 = listaAlumnos.Where(alumno => alumno.Edad > 25).ToList();
-
-            // Ordenar(OrderBy, ThenBy):    Ordenar alumnos por edad y luego por nombre.
-
-            var ordenados = listaAlumnos.OrderBy(alumno => alumno.Edad).ThenBy(alumno => alumno.Nombre).ToList();
-
-            // 3.Seleccionar(Select):   Obtener solo los nombres de los alumnos.
-
-            var nombres = listaAlumnos.Select(alumno => alumno.Nombre).ToList();
-
-            // 4.Proyección(Select):   Crear una lista de objetos anónimos con nombres y edades.
-
-            var proyeccion = listaAlumnos.Select(alumno => new { Nombre = alumno.Nombre, Edad = alumno.Edad }).ToList();
-
-            foreach(var elemento in proyeccion)
-            {
-                Console.WriteLine(elemento.Nombre+" - "+ elemento.Edad);
+                Console.WriteLine(al);
             }
-            // 5.Agregación(Count, Sum, Average, Min, Max):
-            // Contar el número de alumnos.
+            Console.WriteLine(String.Join(",", res));
+            //  Seleccionamos sólo el nombre de los alumnos (devuelve un IEnumerable de tipo string
+            var res2 = from alumno in listaAlumnos
+                       select alumno.Nombre;
+            foreach (string al in res2)
+            {
+                Console.WriteLine(al);
+            }
+            Console.WriteLine(String.Join(",", res2));
+            //Sólo los aprobados
+            res = from alumno in listaAlumnos 
+                  where alumno.Nota >= 5 
+                  select alumno;
 
-            var cantidadAlumnos = listaAlumnos.Count();
+            Console.WriteLine(String.Join(" | ", res));
+            listaAlumnos.Add(new Alumno("Einstein", 50, 10));
+            //Vuelve a ejecutarse la consulta LINQ
+            Console.WriteLine(String.Join(" | ", res));
 
-            // Calcular la suma de las edades.
+            //Ejecución inmediata
+            List<Alumno> inmediato = (from alumno in listaAlumnos where alumno.Nota >= 5 select alumno).ToList<Alumno>();
+            //Podemos usar las funciones de los enumerables
+            Console.WriteLine(res.Count());
 
-            var sumaEdades = listaAlumnos.Sum(alumno => alumno.Edad);
+            Console.WriteLine(String.Join(" | ", res.Reverse()));
+            //Ordenadr ascendente o descendente
+            res = from alumno in listaAlumnos 
+                  where alumno.Nota >= 5 
+                  orderby alumno.Nota descending 
+                  select alumno;
+            Console.WriteLine(String.Join(" | ", res));
 
-            // Calcular el promedio de las notas.
 
-            var promedioNotas = listaAlumnos.Average(alumno => alumno.Nota);
+            //Agrupando
+            var agrupado = from alumno in listaAlumnos 
+                           group alumno by alumno.Nombre.Length;
+            Console.WriteLine(String.Join(",", agrupado.First()));
+            Console.WriteLine(agrupado.Count());
+            foreach (var grupo in agrupado)
+            {
+                Console.WriteLine("Agrupado por el valor: " + grupo.Key + " valores " + grupo.Count());
+                foreach (Alumno al in grupo)
+                {
+                    Console.WriteLine(al);
+                }
+            }
 
-            // Obtener la edad mínima y máxima.
+            agrupado = from alumno in listaAlumnos 
+                       group alumno by alumno.Edad into g 
+                       orderby g.Key descending select g;
+            foreach (var grupo in agrupado)
+            {
+                Console.WriteLine("Agrupado por el valor: " + grupo.Key);
+                foreach (Alumno al in grupo)
+                {
+                    Console.WriteLine(al);
+                }
+            }
+            Console.WriteLine("-----");
+            agrupado = from alumno in listaAlumnos
+                       group alumno by alumno.Nombre.Length into g 
+                       where g.Sum(al => al.Nota) > 10 
+                       orderby g.Key descending select g;
+            foreach (var grupo in agrupado)
+            {
+                Console.WriteLine("Agrupado por el valor: " + grupo.Key);
+                Console.WriteLine(String.Join(",", grupo));
+            }
 
-            var edadMinima = listaAlumnos.Min(alumno => alumno.Edad);
-            var edadMaxima = listaAlumnos.Max(alumno => alumno.Edad);
 
-            // 6.Agrupar(GroupBy):    Agrupar alumnos por edad.
 
-            var gruposPorEdad = listaAlumnos.GroupBy(alumno => alumno.Edad);
-            
-            // 7.Filtrar y Proyectar(Where, Select):    Obtener nombres de alumnos mayores de 25 años.
+            // Obtener los nombres y edades de los alumnos mayores de 25 años, ordenados por edad de forma descendente, y mostrar solo los primeros 3 resultados.
 
-            var nombresMayoresDe25 = listaAlumnos
-                .Where(alumno => alumno.Edad > 25)
-                .Select(alumno => alumno.Nombre)
-                .ToList();
 
-            // 8.Unión(Concat):    Unir dos listas de alumnos.
 
-            var otraLista = new List<Alumno> { new Alumno("Sara", 28, 8.5), new Alumno("David", 25, 6.7) };
+            var consultaCompleja = (from alumno in listaAlumnos
+                                    where alumno.Edad > 25
+                                    orderby alumno.Edad descending
+                                    select new { alumno.Nombre, alumno.Edad })
+                                    .Take(3)
+                                    .ToList();
 
-            var listaCombinada = listaAlumnos.Concat(otraLista).ToList();
+            // Agrupar los alumnos por edad y calcular el promedio de notas para cada grupo.
 
-            // 9.Buscar(FirstOrDefault, LastOrDefault):    Obtener el primer alumno mayor de 30 años.
+            var agrupacionPromedio = from alumno in listaAlumnos
+                                     group alumno by alumno.Edad into grupos
+                                     select new
+                                     {
+                                         Edad = grupos.Key,
+                                         PromedioNotas = grupos.Average(a => a.Nota)
+                                     };
 
-            var primerMayorDe30 = listaAlumnos.FirstOrDefault(alumno => alumno.Edad > 30);
+            //    Realizar una consulta que combine la lista de alumnos con otra lista, utilizando join y seleccionando solo aquellos que tienen una nota mayor a 5.
 
-            /// Obtener el último alumno con una nota mayor a 7.
 
-            var ultimoNotaMayor7 = listaAlumnos.LastOrDefault(alumno => alumno.Nota > 7);
 
-            // 10.Existencia(Any, All):
-            //Verificar si hay algún alumno con edad menor de 18.
+            var otraListaAlumnos = new List<Alumno> { new Alumno("Eva", 20, 8.0), 
+                new Alumno("Ana", 22, 6.5), 
+                new Alumno("Rosa", 22, 4.5) };
 
-            var hayMenorDe18 = listaAlumnos.Any(alumno => alumno.Edad < 18);
+            var resultadoJoin = from alumno in listaAlumnos
+                                join otraLista in otraListaAlumnos on alumno.Nombre 
+                                equals otraLista.Nombre
+                                where otraLista.Nota > 5
+                                select new { alumno.Nombre, alumno.Nota,
+                                    NotaOtraLista = otraLista.Nota };
 
-            //     Verificar si todos los alumnos tienen una nota mayor a 5.
+            //    Utilizar la claúsula let para calcular la edad ajustada de cada alumno y seleccionar aquellos cuya edad ajustada sea mayor a 25.
 
-            var todosAprobados = listaAlumnos.All(alumno => alumno.Nota > 5);
 
-            // Tomar un número específico de elementos(Take):   Obtener los primeros 3 alumnos de la lista.
 
-            var primerosTresAlumnos = listaAlumnos.Take(3).ToList();
+            var consultaLet = from alumno in listaAlumnos
+                              let edadAjustada = alumno.Edad + 5
+                              where edadAjustada > 25
+                              select new { alumno.Nombre, EdadAjustada = edadAjustada };
 
-            // Tomar los alumnos mayores de 25 años y limitar a los primeros 2.
+            //            Filtrar los alumnos mayores de 25 años cuya nota sea mayor a 5, ordenados por edad de forma ascendente y luego por nota de forma descendente.
 
-            var mayoresDe25_2 = listaAlumnos.Where(alumno => alumno.Edad > 25).Take(2).ToList();
 
-            // .Saltar un número específico de elementos(Skip):   Saltar los primeros 2 alumnos de la lista.
 
-            var alumnosDespuesDeDos = listaAlumnos.Skip(2).ToList();
+            var consultaConCondiciones = from alumno in listaAlumnos
+                                         where alumno.Edad > 25 && alumno.Nota > 5
+                                         orderby alumno.Edad, alumno.Nota descending
+                                         select alumno;
 
-            // Obtener los alumnos mayores de 25 años después de saltar los primeros 1.
-
-            var mayoresDespuesDeUno = listaAlumnos.Where(alumno => alumno.Edad > 25).Skip(1).ToList();
-
-            //.Combinar Take y Skip para paginación:  Obtener la segunda página de 3 alumnos cada una.
-
-            int pageSize = 3;
-            int pageNumber = 2;
-
-            var pagina = listaAlumnos.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
-
+            var mejorAlumno = (from alumno in listaAlumnos
+                               orderby alumno.Nota descending
+                               select alumno).First();
+            // Encuentra el nombre y la edad de los alumnos que tienen una nota superior a 5 y que no tienen el mismo nombre que ningún otro alumno.
+            var alumnosUnicosConBuenasNotas = (from alumno in listaAlumnos
+                                               where alumno.Nota > 5
+                                               group alumno by alumno.Nombre into grupo
+                                               where grupo.Count() == 1
+                                               select grupo);
 
         }
     }
